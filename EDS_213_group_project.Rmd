@@ -1,0 +1,27 @@
+---
+title: "EDS 213 Group Project"
+author: "Halina Do-Linh, Marie Rivers, Allie Cole"
+date: "10/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+library(httr)
+library(dataRetrieval)
+# purrr is part of tidyverse
+```
+
+## Assignment 2.3 - Use an API to retrieve data
+
+- We need to document metadata? 
+
+```{r}
+# USGS API
+
+
+```
+
