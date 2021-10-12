@@ -12,6 +12,7 @@ library(tidyverse)
 library(here)
 library(httr)
 library(dataRetrieval)
+library(metajam)
 # purrr is part of tidyverse
 ```
 
@@ -22,6 +23,10 @@ library(dataRetrieval)
 ```{r}
 # USGS API
 
+# set inputs
+data_url <- "https://cn.dataone.org/cn/v2/resolve/56597045-d710-4c97-b10e-830f9a48053d" 
+
+metajam::download_d1_data(data_url, here::here("data"))
 
 ```
 

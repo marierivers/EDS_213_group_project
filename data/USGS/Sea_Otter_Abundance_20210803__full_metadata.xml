@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-sbc.61.8" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="https://pasta.edirepository.org">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=SBC,o=EDI,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=lkui,o=EDI,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/bb7812866cab0c2562305a945f2224cd</alternateIdentifier>
+    <shortName>Sea otter sightings, Santa Barbara Channel area</shortName>
+    <title>SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007</title>
+    <creator>
+      <organizationName>Santa Barbara Coastal LTER</organizationName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Daniel C</givenName>
+        <surName>Reed</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>US</country>
+      </address>
+      <phone>805-893-8363</phone>
+      <electronicMailAddress>danreed@ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0003-3015-8717</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Shannon</givenName>
+        <surName>Harrer</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>US</country>
+      </address>
+      <electronicMailAddress>harrer@msi.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Clint J</givenName>
+        <surName>Nelson</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>US</country>
+      </address>
+      <phone>805-893-7295</phone>
+      <electronicMailAddress>scubaclint@ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Robert J</givenName>
+        <surName>Miller</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>US</country>
+      </address>
+      <phone>805-893-6174</phone>
+      <electronicMailAddress>rjmiller@ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0002-8350-3759</userId>
+    </creator>
+    <pubDate>2021-10-04</pubDate>
+    <language>English</language>
+    <abstract>
+      <section>
+        <para>
+    These data describe the number, location and activity or behavior of
+    sea otters (<emphasis>Enhydra lutris</emphasis>) individuals
+    observed along the Santa Barbara Coast and local Channel Islands,
+    during SBC LTER field sampling. Observations began in 2007. Records
+    are collected regularly at SBC core sites and opportunistically
+    while research staff are underway or travelling between sites.
+    Locations are included, but some latitudes and longitudes are
+    approximate.
+  </para>
+      </section>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">populations</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">abundance</keyword>
+      <keyword keywordType="theme">endangered species</keyword>
+      <keyword keywordType="theme">forests</keyword>
+      <keyword keywordType="theme">long term</keyword>
+      <keyword keywordType="theme">LTER</keyword>
+      <keyword keywordType="theme">marine</keyword>
+      <keyword keywordType="theme">measurements</keyword>
+      <keyword keywordType="theme">populations</keyword>
+      <keyword keywordType="theme">Santa Barbara Coastal</keyword>
+      <keyword keywordType="theme">species</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Community Structure</keyword>
+      <keyword keywordType="theme">Kelp Forest</keyword>
+      <keyword keywordType="theme">populations</keyword>
+      <keyword keywordType="theme">Reef</keyword>
+      <keywordThesaurus>SBC-LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Arroyo Burro Reef</keyword>
+      <keyword keywordType="place">Arroyo Hondo Reef</keyword>
+      <keyword keywordType="place">Arroyo Quemado Reef</keyword>
+      <keyword keywordType="place">Bullito Reef</keyword>
+      <keyword keywordType="place">Carpinteria Reef</keyword>
+      <keyword keywordType="place">Goleta Bay</keyword>
+      <keyword keywordType="place">Isla Vista</keyword>
+      <keyword keywordType="place">Mohawk Reef</keyword>
+      <keyword keywordType="place">Naples Reef</keyword>
+      <keyword keywordType="place">Santa Cruz Island, Diablo</keyword>
+      <keyword keywordType="place">Santa Cruz Island, Twin Harbor West</keyword>
+      <keywordThesaurus>Santa Barbara Coastal LTER Places</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Data</keyword>
+      <keyword keywordType="theme">Ecological abundance</keyword>
+      <keyword keywordType="theme">Location</keyword>
+      <keyword keywordType="theme">Marine sciences</keyword>
+      <keyword keywordType="theme">Recording</keyword>
+      <keyword keywordType="theme">Reefs</keyword>
+      <keywordThesaurus>NBII Biocomplexity</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="taxonomic">Enhydra lutris</keyword>
+      <keyword keywordType="theme">LTER</keyword>
+      <keyword keywordType="theme">marine mammals</keyword>
+      <keyword keywordType="theme">ongoing</keyword>
+      <keyword keywordType="taxonomic">sea otters</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This data package is released under the Creative Commons License
+  Attribution 4.0 International (CC BY 4.0, see
+  https://creativecommons.org/licenses/by/4.0/). This license states
+  that consumers ("Data Users" herein) may distribute, adapt,
+  reuse, remix, and build upon this work, as long as they give
+  appropriate credit, provide a link to the license, and indicate if
+  changes were made. If redistributed, a Data User may not apply
+  additional restrictions or technological measures that prevent access.
+</para>
+      <para>
+  The Data User has an ethical obligation to cite the data source
+  appropriately in any publication or product that results from its use,
+  and notify the data contact or creator. Communication, collaboration,
+  or co-authorship (as appropriate) with the creators of this data
+  package is encouraged to prevent duplicate research or publication.
+  The Data User is urged to contact the authors of these data if any
+  questions about methodology or results occur. The Data User should
+  realize that these data may be actively used by others for ongoing
+  research and that coordination may be necessary to prevent duplication
+  or inappropriate use. The Data User should realize that
+  misinterpretation may occur if data are used outside of the context of
+  the original study. The Data User should be aware that data are
+  updated periodically and it is the responsibility of the Data User to
+  check for new versions of the data.
+</para>
+      <para>
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy of data sets cannot be
+  guaranteed. This data package (with its components) is made available
+  “as is” and with no warranty of accuracy or fitness for use. The
+  creators of this data package and the repository where these data were
+  obtained shall not be liable for any damages resulting from
+  misinterpretation, use or misuse of the data package or its
+  components.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://sbc.lternet.edu/</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>ABUR: Arroyo Burro Reef is located on the Santa Barbara Channel near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to 7 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7445915</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7445915</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.400275</northBoundingCoordinate>
+          <southBoundingCoordinate>34.400275</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>AHND: Arroyo Hondo Reef is located on the Santa Barbara Channel near the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.1426165</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.1426165</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.471817</northBoundingCoordinate>
+          <southBoundingCoordinate>34.471817</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>AQUE: Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4 m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.11905</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.11905</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.46774988</northBoundingCoordinate>
+          <southBoundingCoordinate>34.46774988</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BULL: Builto: Bulito has three permanent transect: Transect I, III, VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real road and Hollister Ranch road crossing section.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.33349</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.33349</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.45850533</northBoundingCoordinate>
+          <southBoundingCoordinate>34.45850533</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>CARP: Carpinteria Reef is located on the Santa Barbara Channel offshore of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.5416933</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.5416933</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.3916319</northBoundingCoordinate>
+          <southBoundingCoordinate>34.3916319</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>GOLB: Goleta Bay is located on the Santa Barbara Channel east of Goleta Pier. Depth range is -4.2 to -5 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.8221</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.8221</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.4137165</northBoundingCoordinate>
+          <southBoundingCoordinate>34.4137165</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IVEE: Isla Vista (IV) Reef is located on the Santa Barbara Channel near the University of California Santa Barbara, CA. Depth range is from -8.2 to -8.8 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.85755</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.85755</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.402783</northBoundingCoordinate>
+          <southBoundingCoordinate>34.402783</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>MOHK: Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference on land is Mohawk Rd / Edgewater Way.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.72957</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.72957</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.3940708</northBoundingCoordinate>
+          <southBoundingCoordinate>34.3940708</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>NAPL: Naples Reef is located on the Santa Barbara Channel near the community of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from -5.9 to -13.4 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.95154</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.95154</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.4221216</northBoundingCoordinate>
+          <southBoundingCoordinate>34.4221216</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>SCDI: Santa Cruz Island, Diablo</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.75763</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.75763</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05865</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05865</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>SCTW: Santa Cruz Island, Twin Harbor West</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.71513</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.71513</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.0444335</northBoundingCoordinate>
+          <southBoundingCoordinate>34.0444335</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Fry's 1: Fry's 1 is north of the Fry's harbor anchorage on the north shore of Santa Cruz Island, CA.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7551</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7551</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05695</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05695</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Fry's 2: Fry's 2 is north of the Fry's harbor anchorage on the north shore of Santa Cruz Island, CA.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7558833</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7558833</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05765</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05765</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Fry's 3: Fry's 3 is north of the Fry's harbor anchorage on the north shore of Santa Cruz Island, CA.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7563</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7563</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05776667</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05776667</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Fern 1: Fern 1 is located on the west edge of a small headland east of Fry's Harbor.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7496333</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7496333</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05365</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05365</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Fern Offshore: Fern Offshore is located on the east edge of a small headland east of Fry's Harbor.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7470333</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7470333</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05291667</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05291667</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BC 1: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the main point.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7414167</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7414167</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05076667</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05076667</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BC 2: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the main point.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7418167</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7418167</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05116667</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05116667</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BC Point: The BC reef is the west side of Platt's Harbor. BC Point is  off a small outcrop.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7406333</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7406333</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.05035</northBoundingCoordinate>
+          <southBoundingCoordinate>34.05035</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Twin W: Twin Harbors, West. North shore, Santa Cruz Island, CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7151333</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7151333</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.0444</northBoundingCoordinate>
+          <southBoundingCoordinate>34.0444</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Twin E: Twin Harbors, East. North shore, Santa Cruz Island, CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.7140833</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.7140833</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.04345</northBoundingCoordinate>
+          <southBoundingCoordinate>34.04345</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2007-05-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-07-28</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <positionName>Information Manager, Santa Barbara Coastal LTER</positionName>
+      <address scope="document">
+        <deliveryPoint>Marine Science Institute</deliveryPoint>
+        <deliveryPoint>University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>United States</country>
+      </address>
+      <phone phonetype="voice">805 893 2071</phone>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+      <onlineUrl>https://sbclter.msi.ucsb.edu/</onlineUrl>
+    </contact>
+    <publisher>
+      <organizationName>Environmental Data Initiative</organizationName>
+      <electronicMailAddress>info@environmentaldatainitiative.org</electronicMailAddress>
+      <onlineUrl>https://environmentaldatainitiative.org</onlineUrl>
+    </publisher>
+    <pubPlace>Environmental Data Initiative</pubPlace>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <para>
+    California sea otter sightings were observed and recorded in the
+    event log in congruence with all other SBC sampling in the field.
+    Binoculars were used if the species identification was unclear. Sea
+    otter location, number, and behavior are recorded any time an
+    individual is sighted in the field. Often individuals are recorded
+    while SBC field technicians are en route to a site. Upon arrival to
+    a site, the surface is scanned for sea otters and binoculars are
+    used to distinguish otters from other marine mammals including
+    harbor seals and sea lions.
+  </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Santa Barbara Coastal Long Term Ecological Research Project</title>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Robert</givenName>
+          <surName>Miller</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 6174</phone>
+        <electronicMailAddress>miller@msi.ucsb.edu</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Dan</givenName>
+          <surName>Reed</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 8363</phone>
+        <electronicMailAddress>dan.reed@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Adrian</givenName>
+          <surName>Stier</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Department of Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9260</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 5467</phone>
+        <electronicMailAddress>adrian.stier@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Gretchen</givenName>
+          <surName>Hoffman</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Department of Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9620</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 6175</phone>
+        <electronicMailAddress>hofmann@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>David</givenName>
+          <surName>Siegel</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Institute for Computational Earth System Science</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-3060</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 4547</phone>
+        <electronicMailAddress>davey@icess.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Santa Barbara Coastal LTER (SBC LTER) is an interdisciplinary research and education program
+established in April 2000 with the goal of developing a predictive understanding of how environmental
+drivers interact with terrestrial and oceanic processes to alter material flows and influence the ecology of
+coastal ecosystems. SBC LTER's principal study domain is the semi-arid coast and nearshore waters of
+the Santa Barbara Channel in southern California, and its diverse and productive marine forests of giant
+kelp (<emphasis>Macrocystis pyrifera</emphasis>) serve as the focal study ecosystem. Analyses of our long-term data have
+identified many of the environmental drivers and ecological processes underlying the production and
+community dynamics of kelp forests. The research proposed to address this question is integrated in a conceptual framework
+that focuses on the causes and ecological consequences of the dynamics of a relatively short-lived
+foundation species in a setting of long-term climate change and human use.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>NSF Award OCE-9982105, OCE-0620276, OCE-1232779, OCE-1831937</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable>
+      <entityName>Sea otter sightings, records</entityName>
+      <entityDescription>Number, location and behavior/activities of sea otters along the Santa Barbara Coast</entityDescription>
+      <physical>
+        <objectName>Sea_Otter_Abundance_20210803.csv</objectName>
+        <size unit="byte">94801</size>
+        <authentication method="MD5">a4000abe07898508e379af4bb57f500d</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/61/8/85e13b27599bf1ed68c7930674e1e7bd</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>YEAR</attributeName>
+          <attributeLabel>Year</attributeLabel>
+          <attributeDefinition>Calendar year</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>MONTH</attributeName>
+          <attributeLabel>Month</attributeLabel>
+          <attributeDefinition>Calendar month</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DATE</attributeName>
+          <attributeLabel>Date</attributeLabel>
+          <attributeDefinition>Date of data collection</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SBC_SITE</attributeName>
+          <attributeLabel>SBC Site</attributeLabel>
+          <attributeDefinition>SBC site nearest to the sighting. See location column for other names, e.g., coves or bays.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>ABUR</code>
+                    <definition>Arroyo Burro Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AHND</code>
+                    <definition>Arroyo Hondo Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ALE</code>
+                    <definition>Alegria Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AQUE</code>
+                    <definition>Arroyo Quemado Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BULL</code>
+                    <definition>Bullito Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CARP</code>
+                    <definition>Carpenteria Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GOLB</code>
+                    <definition>Goleta Bay</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>IVEE</code>
+                    <definition>Isla Vista</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MOHK</code>
+                    <definition>Mohawk Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NAPL</code>
+                    <definition>Naples Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>OTHER</code>
+                    <definition>Location is not near an SBC site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SCDI</code>
+                    <definition>Santa Cruz Island Diablo Point</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SCTW</code>
+                    <definition>Santa Cruz Island Twin West</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LOCATION</attributeName>
+          <attributeLabel>Location</attributeLabel>
+          <attributeDefinition>Coastal site where sea otter was observed. Could be a location on the map, or a location documented in "Sea_Otter_location_data" sheet.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>COUNT</attributeName>
+          <attributeLabel>Count</attributeLabel>
+          <attributeDefinition>Number of sea otters observed</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ACTIVITY</attributeName>
+          <attributeLabel>Activity</attributeLabel>
+          <attributeDefinition>Describes the activity of the otter at the time of the sighting</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>value not recorded or not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>NOTES</attributeName>
+          <attributeLabel>Notes</attributeLabel>
+          <attributeDefinition>Text annotations to data observations</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>value not recorded or not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>2261</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Sea otter sightings, locations</entityName>
+      <entityDescription>Names and approximate waypoints for locations of otter sightings that are not in the core research sites</entityDescription>
+      <physical>
+        <objectName>sea_otter_location_data_20190114.csv</objectName>
+        <size unit="byte">619</size>
+        <authentication method="MD5">3c34bf9cb66b1d5912d32abaf0426f60</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/61/8/91138e31214e2b0f7740664af4289816</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>LOCATION</attributeName>
+          <attributeLabel>Location Name</attributeLabel>
+          <attributeDefinition>Location where sea otter was observed. These may be local names that do not appear on general maps.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LATITUDE</attributeName>
+          <attributeLabel>Latitude</attributeLabel>
+          <attributeDefinition>Approximate latitude for the location of sea otter sightings</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <precision>1e-04</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LONGITUDE</attributeName>
+          <attributeLabel>Longitude</attributeLabel>
+          <attributeDefinition>Approximate longtitude for the location of sea otter sightings</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <precision>1e-04</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>19</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="degree" abbreviation="°" multiplierToSI="0.0174532924" name="degree" parentSI="radian" unitType="angle">
+          <description>360 degrees comprise a unit circle.</description>
+        </unit>
+        <unit id="number" name="number" unitType="dimensionless">
+          <description>a number</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
