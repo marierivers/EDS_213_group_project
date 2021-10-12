@@ -21,12 +21,14 @@ library(metajam)
 - We need to document metadata? 
 
 ```{r}
-# USGS API
-
 # set inputs
-data_url <- "https://cn.dataone.org/cn/v2/resolve/56597045-d710-4c97-b10e-830f9a48053d" 
+data_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
-metajam::download_d1_data(data_url, here::here("data"))
+metajam::download_d1_data(data_url, "data")
+
+data_url2 <- "https://search.dataone.org/view/79aabecc-6263-4837-b68b-cdf5b644fe46"
+
+metajam::download_d1_data(data_url, "data")
 
 ```
 
