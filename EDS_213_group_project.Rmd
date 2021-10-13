@@ -13,7 +13,6 @@ library(here)
 library(httr)
 library(dataRetrieval)
 library(metajam)
-# purrr is part of tidyverse
 ```
 
 ## Assignment 2.3 - Use an API to retrieve data
@@ -21,24 +20,16 @@ library(metajam)
 - We need to document metadata? 
 
 ```{r}
-# LTER
+# Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
 data_lter_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
 metajam::download_d1_data(data_lter_url, "data")
-
 ```
 
 ```{r}
-# data_usgs_url <- "https://cn.dataone.org/cn/v2/resolve/79aabecc-6263-4837-b68b-cdf5b644fe46"
-
-# metajam::download_d1_data(data_usgs_url, "data")
-```
-
-
-```{r}
-data_knb_alaska_url <- "https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A667844b4-b055-4ed3-a3a1-28bcb11dca25"
-
-metajam::download_d1_data(data_knb_alaska_url, "data")
+# Nicole LaRoche, Sydney King, and Heidi Pearson. 2020. Sea otter foraging data, visual observations from Prince of Wales, Alaska. Knowledge Network for Biocomplexity.
+data_knb_alaska2020_url <- "https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ad06722b5-492c-4677-9c81-94a96a5aaca6"
+metajam::download_d1_data(data_knb_alaska2020_url, "data")
 ```
 
 ```{r}
@@ -46,11 +37,13 @@ metajam::download_d1_data(data_knb_alaska_url, "data")
 data_knb_alaska2019_url <- "https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ad97089d4-b532-493b-b253-7f3f4adf939d"
 
 metajam::download_d1_data(data_knb_alaska2019_url, "data")
-
 ```
 
 ```{r}
-knb <- read_csv(here("data", "knb", "Prey_Class.csv"))
+# links for USGS data were not valid
+# data_usgs_url <- "https://cn.dataone.org/cn/v2/resolve/79aabecc-6263-4837-b68b-cdf5b644fe46"
+
+# metajam::download_d1_data(data_usgs_url, "data")
 ```
 
 
