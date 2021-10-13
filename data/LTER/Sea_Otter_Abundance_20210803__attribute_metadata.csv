@@ -1,9 +1,0 @@
-attributeName,attributeLabel,attributeDefinition,storageType,formatString,dateTimePrecision,measurementScale,domain,definition,unit,precision,numberType,minimum,missingValueCode,missingValueCodeExplanation,metadata_pid
-YEAR,Year,Calendar year,integer,YYYY,1,dateTime,dateTimeDomain,NA,NA,NA,NA,NA,NA,NA,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-MONTH,Month,Calendar month,string,NA,NA,nominal,textDomain,any text,NA,NA,NA,NA,NA,NA,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-DATE,Date,Date of data collection,string,YYYY-MM-DD,1,dateTime,dateTimeDomain,NA,NA,NA,NA,NA,NA,NA,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-SBC_SITE,SBC Site,"SBC site nearest to the sighting. See location column for other names, e.g., coves or bays.",string,NA,NA,nominal,enumeratedDomain,NA,NA,NA,NA,NA,NA,NA,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-LOCATION,Location,"Coastal site where sea otter was observed. Could be a location on the map, or a location documented in ""Sea_Otter_location_data"" sheet.",string,NA,NA,nominal,textDomain,any text,NA,NA,NA,NA,NA,NA,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-COUNT,Count,Number of sea otters observed,integer,NA,NA,ratio,numericDomain,NA,number,1,whole,0,NA,NA,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-ACTIVITY,Activity,Describes the activity of the otter at the time of the sighting,string,NA,NA,nominal,textDomain,any text,NA,NA,NA,NA,"NA",value not recorded or not available,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
-NOTES,Notes,Text annotations to data observations,string,NA,NA,nominal,textDomain,any text,NA,NA,NA,NA,"NA",value not recorded or not available,https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/61/8
