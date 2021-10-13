@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:b910f74b-171b-4d2b-b065-fb21823a8e84" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 eml.xsd https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
+  <dataset>
+    <alternateIdentifier>APECS_alaska</alternateIdentifier>
+    <title>Boat-based counts of sea otters at specific sites in Southeast Alaska</title>
+    <creator id="4939574155102422">
+      <individualName>
+        <givenName>Tiffany</givenName>
+        <surName>Stephens</surName>
+      </individualName>
+      <electronicMailAddress>tiffanybot@gmail.com</electronicMailAddress>
+      <onlineUrl>www.tiffstephens.com</onlineUrl>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0001-6422-1003</userId>
+    </creator>
+    <creator id="5927083353834280">
+      <individualName>
+        <givenName>Ginny</givenName>
+        <surName>Eckert</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Professor</positionName>
+      <address>
+        <deliveryPoint>17101 Point Lena Loop Rd</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>gleckert@alaska.edu</electronicMailAddress>
+    </creator>
+    <associatedParty id="1808057219509592">
+      <individualName>
+        <givenName>Ginny</givenName>
+        <surName>Eckert</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Professor</positionName>
+      <address>
+        <deliveryPoint>17101 Point Lena Loop Rd</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>gleckert@alaska.edu</electronicMailAddress>
+      <role>principalInvestigator</role>
+    </associatedParty>
+    <pubDate>2019-08-01</pubDate>
+    <abstract>
+      <para>This dataset is composed of counts of individual sea otters that were observed within a 2-nautical mile radius of specific intertidal sites. All counts were performed via boat-based operations; gender and the presence of pups were not recorded. Each observation is associated with a waypoint and the number of sea otters at that waypoint. These counts were conducted at 21 sites in Southeast Alaska on Prince of Wales Island in 2017 and 2018. These data were collected to compliment a larger, interdisciplinary project called APECS (Apex predators, Ecosystems, and Community Sustainability), the focus of which investigated the role that sea otters have on seagrass habitats, their ecological function, and influences on traditional and subsistence harvest of specified marine organisms.</para>
+    </abstract>
+    <keywordSet>
+      <keyword>Sea otter</keyword>
+      <keyword>Alaska</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>The western coastline of Prince of Wales Island (Alaska, USA) and the adjacent archipelago.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-134.4531</westBoundingCoordinate>
+          <eastBoundingCoordinate>-132.0942</eastBoundingCoordinate>
+          <northBoundingCoordinate>56.4206</northBoundingCoordinate>
+          <southBoundingCoordinate>54.5281</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2017-04-20</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2018-08-20</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>We only observed one organism in this dataset, and it is identified to species.</generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Genus</taxonRankName>
+          <taxonRankValue>Enhydra</taxonRankValue>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <contact id="6868815197576384">
+      <individualName>
+        <givenName>Tiffany</givenName>
+        <surName>Stephens</surName>
+      </individualName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0001-6422-1003</userId>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>Pre-fieldwork: The objective of the sea otter counts was to determine the number of sea otters that could reasonably access selected seagrass sites that are of interest to the objectives defined by the APECS project. Sea otter foraging behavior indicates that they can swim about 2 nautical miles (nm) while foraging for prey in one day. Thus, for each seagrass site we overlayed a circle with a 2-nm radius (centered on the seagrass site) on a map, which provided the boundaries for where we counted sea otters. Within these boundaries, the best path for covering all of the area (while avoiding land/rock features) was considered before heading into the field.</para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>Fieldwork: Sea otters were counted using a boat-based approach (boat: 27’ North River, dual 250cc engines). It was first necessary to determine the extent of the survey area relevant to the target seagrass site (as described in Step 1, above). Within this survey area, we used a meandering path approach to count sea otters, where we ensured that all points within the survey area were visually scanned for sea otters once (i.e. a single, meandering line rather than replicate transects standardized by distance). We conducted all surveys using a GPS-enabled iPad with navigational abilities (i.e. iNavX app); this allowed us (1) to record each sea otter event using distinct waypoints, (2) to display real-time spatial locations of counted sea otters to prevent double-counting during each survey, and (3) to record our boat path throughout the survey area to prevent covering the same section of water more than once. The speed at which the boat travelled during the sea otter survey was maintained at 8 knots (+ / - 0.5 knots fluctuations from wind/current influence). Ultimately, we converted these counts into densities (number of otters per square km) after calculating the total survey area of water surrounding each seagrass site (2-nm radius, no inclusion of land)</para>
+          <para>Only sea otters that were within 300 m of the boat (the distance at which objects could reliably be confirmed as sea otters using binoculars across multiple observers) were included for counting as the boat wove through the survey area. Surveys were cancelled if sea conditions exceeded 3 on the Beaufort Scale, and/or if visibility was too poor for navigation or observation at 300 m (including if rain affected the utility of the binoculars). Due to the variation in total area surveyed (dependent on the geographical features of each site), the duration of each survey ranged from approximately 35 min to 1.75 hrs.</para>
+          <para>The counts required at least four crew members: one boat captain, one recorder + observer, and two observers-only. The boat captain remained in the wheelhouse to navigate but would notify the recorder of any sea otters that were observed directly in front of the boat in case they dove below the surface as the boat approached. Both observer-only crew members were stationed on the back deck of the boat, one on the starboard and one on the port. The recorder was also on the back deck with the iPad to confirm sea otter sightings before entering the observation as a spatially accurate waypoint in iNavX (number of sea otters for that point was recorded in the comment section of the waypoint); the recorder also helped look for sea otters. If a fifth person was available, they sat inside the wheelhouse with the captain to keep constant watch over waters in front of the boat. All crew members were equipped with one pair of binoculars (10x42 specifications).</para>
+        </description>
+      </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>We replicated the methods in 21 sites, each site was visited once for these sampling methods. These data were collected to compliment eelgrass community data (see other “APECS_alaska” datasets). Sites were chosen based on the presence of intertidal access to meadows of the seagrass, Zostera marina, and whether the meadow was continuous enough to run a 100-m transect across it (parallel to shore).</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para>Please refer to the above methods.</para>
+        </samplingDescription>
+      </sampling>
+    </methods>
+    <project>
+      <title>Boat-based counts of sea otters at specific sites in Southeast Alaska</title>
+      <personnel id="7058512459287536">
+        <individualName>
+          <givenName>Tiffany</givenName>
+          <surName>Stephens</surName>
+        </individualName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <funding>
+        <para>NSF 1635716</para>
+        <para>NSF 1600230</para>
+      </funding>
+    </project>
+    <otherEntity id="urn-uuid-45fa36a8-33c1-4fdf-9c19-567400546188">
+      <entityName>Hab_All_UTM.prj</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7eba259b-eeb5-4375-9596-e797bbb0b27d">
+      <entityName>Hab_All_UTM.dbf</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7bc4dc53-d6fd-45db-a412-14f0e9bc64b6">
+      <entityName>Hab_All_UTM.cpg</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-dfc30e26-8e36-4f1e-9ea1-35794de46dc5">
+      <entityName>Hab_All_UTM.shx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-ebb25ebd-b874-44b2-a663-4274a337fa54">
+      <entityName>Hab_All_UTM_shp.xml</entityName>
+      <entityType>text/xml</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-84707cdf-ec21-4979-bca6-5238ea8c8d5f">
+      <entityName>Hab_All_UTM.shp</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-0f48b9dd-1302-4a0d-91dd-ae19b2c66659">
+      <entityName>Hab_All_UTM.sbx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-cb92e0dc-0985-4d6e-adf2-0aaeb3179e34">
+      <entityName>Hab_All_UTM.sbn</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-928731f1-2312-4c3e-b540-26616a73f4a2">
+      <entityName>POW_water_UTM.shx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-a865df7b-49bf-407c-a692-4b09cfe8a752">
+      <entityName>POW_water_UTM_shp.xml</entityName>
+      <entityType>text/xml</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-e8ed5642-2c88-497e-a98c-e39e28d9e02b">
+      <entityName>POW_water_UTM.shp</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-5c4be46e-032a-4502-94de-e599b0434f9a">
+      <entityName>POW_water_UTM.sbx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-74cd770e-893d-411a-baee-6ce32178e2d8">
+      <entityName>POW_water_UTM.sbn</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7b2a9171-d171-4833-9dba-65d47f25c975">
+      <entityName>POW_water_UTM.prj</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-86381a13-87bc-47cf-9a02-891cbcbeea09">
+      <entityName>POW_water_UTM.dbf</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-bc6156df-c13b-492f-a522-76ceb2dc0c1f">
+      <entityName>POW_water_UTM.cpg</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-bd2f9cb3-2fed-4a12-90f0-bf78a7bdfa48">
+      <entityName>POW_water_UTM.shx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7a5d64ef-45ac-465c-9cc2-90f10321f2b3">
+      <entityName>POW_water_UTM_shp.xml</entityName>
+      <entityType>text/xml</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-4444f344-38e2-46c8-b72c-4ad0d526210d">
+      <entityName>POW_water_UTM.shp</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7dcf97b3-201f-43d8-9222-cac225735bbe">
+      <entityName>POW_water_UTM.sbx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7e382dbd-8329-4b9f-9611-17ce12218b8e">
+      <entityName>POW_water_UTM.sbn</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-34048299-2023-46fb-ba8f-340bc7c538d8">
+      <entityName>POW_water_UTM.prj</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-f2fe57f9-1ccc-44ff-8f6e-696352f1cd73">
+      <entityName>POW_water_UTM.dbf</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-16293c47-1d63-49d6-8312-71a7eee66e26">
+      <entityName>POW_water_UTM.cpg</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-1eb40624-ef4d-497c-a49c-03ffd9e1163a">
+      <entityName>sea_otter_counts_METADATA.xlsx</entityName>
+      <entityType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-d97089d4-b532-493b-b253-7f3f4adf939d">
+      <entityName>sea_otter_counts_2017&amp;2018_CLEANDATA.csv</entityName>
+      <entityType>text/csv</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-140b334e-edf5-4246-8879-c75f4a78a546">
+      <entityName>otter_gps_2018.csv</entityName>
+      <entityType>text/csv</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-72509bec-d575-40a8-be6e-f58b77b140c3">
+      <entityName>otter_gps_2017.csv</entityName>
+      <entityType>text/csv</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-03f98c75-23de-480f-9e8d-7257726ba04b">
+      <entityName>otter_count_siteinfo.xlsx</entityName>
+      <entityType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-da5db13d-7589-4968-9de6-baa70daebb51">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.cpg</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-ef641c84-0b17-4df3-aa0e-288c68c50ec2">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.dbf</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-d4ec1a62-8db8-4f54-9b90-00ad9d42e9a8">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.prj</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-5621cdcb-dc5e-449c-a7e1-0817d1a3728c">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.sbn</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-456bd02a-aa51-4218-a45c-24164994ecaf">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.sbx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-1c2f5e72-76b1-4431-a2b3-3337b68ea4f3">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.shp</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-f6e9b111-df9b-4f2b-8c2b-94578034615a">
+      <entityName>Otter_Survey_Sites_2017_All_UTM.shx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-c4de1a4e-9935-42cf-bf51-57a1fde6f092">
+      <entityName>Otter_Survey_All_10Jan18_UTM.cpg</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-51f1a21a-c150-4ed1-9074-59021ac3ef1e">
+      <entityName>Otter_Survey_All_10Jan18_UTM.dbf</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-f4d9fc5c-7040-4b5c-990c-a92cf771e6dc">
+      <entityName>Otter_Survey_All_10Jan18_UTM.prj</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-46a66921-cc2e-4cb6-8764-c9505d38d03d">
+      <entityName>Otter_Survey_All_10Jan18_UTM.sbn</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-7b29fd16-dc27-4c2a-86cd-594320a4bb29">
+      <entityName>Otter_Survey_All_10Jan18_UTM.sbx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-6edaa1bf-8f51-4010-95f5-49962cf78703">
+      <entityName>Otter_Survey_All_10Jan18_UTM.shp</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-f67fcc30-99ac-42d1-af52-5e7fcee247ff">
+      <entityName>Otter_Survey_All_10Jan18_UTM.shx</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-78416510-b3ba-4e14-ba68-897e260237e9">
+      <entityName>Hab_All_UTM.shp</entityName>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-d8710ea8-595e-456d-932c-a7aea12b5088">
+      <entityName>Subpop_density_Tinker.csv</entityName>
+      <entityDescription>Sea otter density values in Southeast Alaska, as calculated by Tinker et al 2019  https://doi.org/10.1002/jwmg.21685</entityDescription>
+      <entityType>application/vnd.ms-excel</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

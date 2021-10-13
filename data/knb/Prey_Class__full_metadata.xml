@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:bbf026b7-ca66-412e-9243-33532506c4e0" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 eml.xsd https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="https://tools.ietf.org/html/rfc4122">
+  <dataset>
+    <alternateIdentifier>APECS_alaska</alternateIdentifier>
+    <title>Sea otter foraging data, visual observations from Prince of Wales, Alaska</title>
+    <creator id="4467095865951343">
+      <individualName>
+        <givenName>Nicole</givenName>
+        <surName>LaRoche</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Graduate Student</positionName>
+      <address>
+        <deliveryPoint>17101 Point Lena Loop Road</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>nlaroche@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-3737-5714</userId>
+    </creator>
+    <creator id="6148957966479001">
+      <individualName>
+        <givenName>Sydney</givenName>
+        <surName>King</surName>
+      </individualName>
+      <organizationName>University of Alaska Southeast</organizationName>
+      <positionName>Field Technician</positionName>
+      <address>
+        <deliveryPoint>11066 Auke Lake Way</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>sydneyleeking@gmail.com</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-0524-8625</userId>
+    </creator>
+    <creator id="2807219609593294">
+      <individualName>
+        <givenName>Heidi</givenName>
+        <surName>Pearson</surName>
+      </individualName>
+      <organizationName>University of Alaska Southeast</organizationName>
+      <positionName>Associate Professor</positionName>
+      <address>
+        <deliveryPoint>11066 Auke Lake Way</deliveryPoint>
+        <deliveryPoint>AND 1</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>hcpearson@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0001-6422-1003</userId>
+    </creator>
+    <pubDate>2020</pubDate>
+    <abstract>
+      <para>Sea otter diets were assessed during summertime 2018 (May-August) visual observations from land. Data were collected on western Prince of Wales Island Alaska, at various sites where sea otter densities are high.  These data were collected as a part of an NSF-funded project: Apex Predators, Ecosystems, and Community Sustainability (APECS, http://apecs-ak.org/). Other datasets to support this work are also archived with KNB.</para>
+    </abstract>
+    <keywordSet>
+      <keyword>sea otter</keyword>
+      <keyword>Enhydra lutris</keyword>
+      <keyword>Southeast Alaska</keyword>
+      <keyword>foraging behavior</keyword>
+      <keyword>predation</keyword>
+      <keyword>clam</keyword>
+      <keyword>crab</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://knb.ecoinformatics.org/view/urn:uuid:bbf026b7-ca66-412e-9243-33532506c4e0</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Prince of Wales Island, Alaska</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-134.105784</westBoundingCoordinate>
+          <eastBoundingCoordinate>-132.396348</eastBoundingCoordinate>
+          <northBoundingCoordinate>56.336226</northBoundingCoordinate>
+          <southBoundingCoordinate>54.930219</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2018-05-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2018-08-20</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Species</taxonRankName>
+          <taxonRankValue>Enhydra lutris</taxonRankValue>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <contact id="1305675979126370">
+      <individualName>
+        <givenName>Nicole</givenName>
+        <surName>LaRoche</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Graduate Student</positionName>
+      <address>
+        <deliveryPoint>17101 Point Lena Loop Road</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>nlaroche@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-3737-5714</userId>
+    </contact>
+    <contact id="5924567635146679">
+      <individualName>
+        <givenName>Ginny</givenName>
+        <surName>Eckert</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Professor</positionName>
+      <address>
+        <deliveryPoint>17101 Point Lena Loop Road</deliveryPoint>
+        <city>Juneau</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99801</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>gleckert@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-7538-7081</userId>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>Sea otter foraging data were collected from May to August 2018 via visual observations. Data were collected from locations spanning the west coast of POW encompassing soft and rocky habitats where sea otters occur in high densities. Foraging observations were made from shore to assess sea otter diet composition. Questar telescopes (20-50X) were used to follow individual sea otters for one bout, defined as sequential dives by one sea otter for a maximum of 20 dives or until the sea otter was lost by the observer. Twenty dives are used as this is the maximum number of dives required to determine significant relationships between prey type and diving success. Observations were limited to two observers that were trained together to report analogous observations. For each surface interval (i.e., the time between two consecutive foraging dives), the observer recorded the prey item, to species level when possible. Visual observations were separated into Spring (May 6 – June 20) or Summer (June 21 – August 13). Prey biomass for each season was estimated using a Monte Carlo based simulation to factor in unknown prey and potentially biased prey items.</para>
+        </description>
+      </methodStep>
+    </methods>
+    <otherEntity id="urn-uuid-fa299692-15a0-4040-8453-878e67f6fec2">
+      <entityName>forage_cleaning.R</entityName>
+      <entityDescription>Cleaning file for 2018_Foraging.csv</entityDescription>
+      <entityType>application/octet-stream</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-667844b4-b055-4ed3-a3a1-28bcb11dca25">
+      <entityName>Prey_Class.csv</entityName>
+      <entityDescription>Sea otter prey codes used in foraging data and their defining factors.</entityDescription>
+      <attributeList>
+        <attribute id="qIdTIPTCsoBToDbR4w2TL4RFEW34K2">
+          <attributeName>Prey code</attributeName>
+          <attributeDefinition>Three letter code associated with the species or taxon of the prey item.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="ROaVt0AlELTlTuob3kBUAn3Z3kWpT3">
+          <attributeName>Common Name</attributeName>
+          <attributeDefinition>Common name of the prey item.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="NvadL0keK5U641Cwl8K2ZF4oUEUlTK">
+          <attributeName>Species name</attributeName>
+          <attributeDefinition>Scientific name (genus, species) of prey item, with any necessary notes.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="0NKFeyRTTvdC9XP0gJ53ORySUUgN26">
+          <attributeName>Class name</attributeName>
+          <attributeDefinition>Functional sea otter prey group.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="aawSH1HPAkAcXnq8bxA8etx2TPQ84m">
+          <attributeName>Class ID</attributeName>
+          <attributeDefinition>Numerical value used for SOFA analysis.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <entityType>text/csv</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-226752a1-516c-4bbf-adfe-c74ca52049f5">
+      <entityName>2018_Foraging.csv</entityName>
+      <entityDescription>All sea otter foraging data collected in 2018 on Prince of Wales Island in Southeast, Alaska.</entityDescription>
+      <attributeList>
+        <attribute id="UMCXSP3rUaS96TrxPZkAC9vv7GUUPu">
+          <attributeName>BoutID</attributeName>
+          <attributeDefinition>Year of study, followed by numerical value of bout.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="hSmkL9uTtdNIiS8B89hWRiRZsketd2">
+          <attributeName>Study</attributeName>
+          <attributeDefinition>General location of study in Southeast Alaska.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>POW</code>
+                    <definition>Prince of Wales Island</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="ogDaDFWI8I014omgGJsO4u5CKKEfI9">
+          <attributeName>Date</attributeName>
+          <attributeDefinition>Date of data collection.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM/DD/YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="RaDdKzzJAVbX7K2Lfs2TqdNhJ0xXvl">
+          <attributeName>BoutStart</attributeName>
+          <attributeDefinition>Time on the clock of first recorded dive.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="2yn22aQZV83Kb2T4119lg7gaJxybap">
+          <attributeName>BoutEnd</attributeName>
+          <attributeDefinition>Time on the clock of dive after observation is over (enough dives have been recorded), or when sea otter is lost.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="ofg9G8JSTrVu08vTxHdNm2lVVrggDp">
+          <attributeName>DiveNo</attributeName>
+          <attributeDefinition>Number of the recorded dive of an individual sea otter.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="llwzxA5OngsCtl2s4m6ogKSEK6V1nA">
+          <attributeName>DT</attributeName>
+          <attributeDefinition>Number of seconds the sea otter was under the surface for the specified dive.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>ss</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="7ed8QgTUPXT06Uhkpb8ehlFqrSIclv">
+          <attributeName>ST</attributeName>
+          <attributeDefinition>Number of seconds the sea otter was above the surface after the specified dive.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>ss</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="refZPFgKSKNQUGsyHSByf47MZk7T4d">
+          <attributeName>Suc</attributeName>
+          <attributeDefinition>Success of the dive (if prey was retrieved and brought to surface/type of dive).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>T</code>
+                    <definition>Travel dive</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>Prey was carried over from previous dive</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>I</code>
+                    <definition>Interacting with another sea otter</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Unknown</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="5NCoevGHHdqgOWQ1CBymG68MbOucgC">
+          <attributeName>HT</attributeName>
+          <attributeDefinition>Number of seconds that prey was handled (eating and/or holding).</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>ss</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="5ZTgNPVQadyORfC31W9tGXNTC2IWZG">
+          <attributeName>PreyItem</attributeName>
+          <attributeDefinition>Three letter code associated with the species or taxon of the prey item (refer to prey_class data set).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="89VkEWPsXSrOrbWPIWi8VFWc0iK2Px">
+          <attributeName>PreyQty</attributeName>
+          <attributeDefinition>Number of prey items received in specified dive that belong to the corresponding prey code.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="bXg5aoH3GkVuKRaAZEbyncXQm1Pwk5">
+          <attributeName>PreySz</attributeName>
+          <attributeDefinition>Estimated size of the prey item based on sea otter paw width. A is less than 1/3 the paw, B is less than 2/3 the paw, and C is the whole paw.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="y2RAbFerRcJKUNqEnJcPyTfTKsdMko">
+          <attributeName>Why? / Notes / Tool Use</attributeName>
+          <attributeDefinition>Reason that prey was not eaten, any notes on prey and/or dive, and any tools used on prey.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="UyHrbcTehGX3MSP3ETpIiS7XPkLq6r">
+          <attributeName>Region</attributeName>
+          <attributeDefinition>Defined area of Prince of Wales Island where observed sea otter was foraging.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="CLXJLluneUZb15sIJqJNvk4BZhSvP9">
+          <attributeName>YEAR</attributeName>
+          <attributeDefinition>Aerial Survey year from USFWS surveys.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="xZN2KXAZKxCdX6Wu4ia5LDlinvbwlt">
+          <attributeName>ObsLatDeg</attributeName>
+          <attributeDefinition>Latitude of the observer's position in decimal degrees. Coordinates are N.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="HWBH1s88ke41Akg779EMQEf9WTZDm2">
+          <attributeName>ObsLatMin</attributeName>
+          <attributeDefinition>Latitude of the observer's position in degrees, minutes, seconds.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="3aeMTfzpA9hLceTx3TBNcUXeeHs5uB">
+          <attributeName>ObsLongDeg</attributeName>
+          <attributeDefinition>Longitude of the observer's position in decimal degrees (negative). Coordinates are E.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="M5txZSbZOVS9acoaTHS1agSSDbvdUK">
+          <attributeName>ObsLongMin</attributeName>
+          <attributeDefinition>Longitude of the observer's position in degrees, minutes, seconds.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="n4oszJOzQpXJz5hH79O1G8VAxMWrLX">
+          <attributeName>OtterLatDeg</attributeName>
+          <attributeDefinition>Latitude of the sea otter's position in decimal degrees. Coordinates are N.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="P4F2NUPViXdSlyJDgmJFRFmNSLWDZn">
+          <attributeName>OtterLatMin</attributeName>
+          <attributeDefinition>Latitude of the sea otter's position in degrees, minutes, seconds.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="RE8WcTKrem6TyaFC3Ee2KRlrMqSP3e">
+          <attributeName>OtterLongDeg</attributeName>
+          <attributeDefinition>Longitude of the sea otter's position in decimal degrees (negative). Coordinates are E.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="P4Ex1FPh07HJd4MAmmiTJIKm1pbkGO">
+          <attributeName>OtterLongMin</attributeName>
+          <attributeDefinition>Longitude of the sea otter's position in degrees, minutes, seconds.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="G6KnUD2pzZcC50Qk3ROQ1OdBBexLOE">
+          <attributeName>age</attributeName>
+          <attributeDefinition>Sea otter age (juvenile or adult).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Adult</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>J</code>
+                    <definition>Juvenile</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Undetermined</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="7KzIH7WR5ocktOL5IEohCC8ErXDvTh">
+          <attributeName>sex</attributeName>
+          <attributeDefinition>Reproductive status of sea otter.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>M</code>
+                    <definition>Male</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>F</code>
+                    <definition>Female</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Undetermined</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="vTNZSB59CB3LJQT8rmdprgOGNT5wr2">
+          <attributeName>pup</attributeName>
+          <attributeDefinition>Size of pup if present.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>L</code>
+                    <definition>large</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>small</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Undetermined</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="hswgEbHWp86SsnthXKLh2dJPz66N12">
+          <attributeName>where</attributeName>
+          <attributeDefinition>Location of sea otter in terms of ecosystem type.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>OW</code>
+                    <definition>open water</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>IN</code>
+                    <definition>intertidal</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ER</code>
+                    <definition>emergent rocks</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KC</code>
+                    <definition>kelp canopy</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="Md0CQbxycT0eXRGwGfTLmsdGq6n2aR">
+          <attributeName>obscond</attributeName>
+          <attributeDefinition>Observer's visibility of sea otter (glare, chop, distance, etc.).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>FA</code>
+                    <definition>fair</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GO</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>VG</code>
+                    <definition>very good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>EX</code>
+                    <definition>excellent</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="HrvE5lrnUmSv4JrGt02FoMl3FgGcMG">
+          <attributeName>Rain</attributeName>
+          <attributeDefinition>Amount of precipitation during observation (none, drizzle, light, rain).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="xoLvJPaK9e3NJdWF0qT8QZlqhxa3n1">
+          <attributeName>Sky</attributeName>
+          <attributeDefinition>Cloud cover percentage at time of observation (0%, 25%, 50%, 75%,100%).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>0-24%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>25</code>
+                    <definition>25-49%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>50</code>
+                    <definition>50-74%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>75</code>
+                    <definition>75-99%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>100</code>
+                    <definition>100%</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="dhHOIFsX2yxrerns4NnJhhLDLTiauR">
+          <attributeName>observer</attributeName>
+          <attributeDefinition>Initials of the person observing the sea otter.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="TyrbsOr1Mz8chhxcPIPhRaui1LJT7F">
+          <attributeName>recorder</attributeName>
+          <attributeDefinition>Initials of the person recording the data.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="fUSqPvTzORsL4AouCxAX4O5EZm326C">
+          <attributeName>EnteredBy</attributeName>
+          <attributeDefinition>Initials of the person who entered the raw data into the dataset.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="SbH5GF3PxUgT65k5rI2a2JkRNtlG55">
+          <attributeName>checked by</attributeName>
+          <attributeDefinition>Initials of the person who double checked the entered data against the raw data.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="AFGA53neWns8Q0tRkXMXyWWTtUgRTE">
+          <attributeName>DIVE NUMBER</attributeName>
+          <attributeDefinition>Determines if the dive was a foraging dive.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>TRUE</code>
+                    <definition>foraging dive, suc = Y/N</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FALSE</code>
+                    <definition>travel, carryover, or interacting dive</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="XlEeCTsMUawzygPZpyqpelzrWumJ8A">
+          <attributeName>PropNotEat</attributeName>
+          <attributeDefinition>Estimated percentage of uneaten prey displayed as a decimal.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <entityType>text/csv</entityType>
+    </otherEntity>
+    <otherEntity id="urn-uuid-d06722b5-492c-4677-9c81-94a96a5aaca6">
+      <entityName>forage_final.csv</entityName>
+      <entityDescription>Sea otter foraging data set for 2018 with necessary information for analyses. Data taken from 2018_foraging data set.</entityDescription>
+      <attributeList>
+        <attribute id="TtG4ecckc7hE8NBW52Qu5Taya7H4yp">
+          <attributeName>BoutID</attributeName>
+          <attributeDefinition>Year of study, followed by numerical value of bout.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="BNeXtgsmAuMmeC5IZAN8ryymtfddNV">
+          <attributeName>Study</attributeName>
+          <attributeDefinition>General location of study in Southeast Alaska.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>POW</code>
+                    <definition>Prince of Wales Island</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="ax8dgTPhq4h9t69ZET7uUxJRNkGcDT">
+          <attributeName>Date</attributeName>
+          <attributeDefinition>Date of data collection.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM/DD/YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="U570uor3sMyUZnkn4SKZpnv1y7zChn">
+          <attributeName>BoutStart</attributeName>
+          <attributeDefinition>Time on the clock of first recorded dive.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="wnho5aPIr9VFskvOzOGDH9JAAl2IZ5">
+          <attributeName>BoutEnd</attributeName>
+          <attributeDefinition>Time on the clock of dive after observation is over (enough dives have been recorded), or when sea otter is lost.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="J5U4AQtDMCy6K4ZN3UBN6NoZyg9lQH">
+          <attributeName>DiveNo</attributeName>
+          <attributeDefinition>Number of the recorded dive of an individual sea otter.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="9ORLwGNKspt3STgfi9erN7xqTaTklH">
+          <attributeName>DT</attributeName>
+          <attributeDefinition>Number of seconds the sea otter was under the surface for the specified dive.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>ss</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="yTkHATbyNJcIptiuELas2TXqH2AExq">
+          <attributeName>ST</attributeName>
+          <attributeDefinition>Number of seconds the sea otter was above the surface after the specified dive.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>ss</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="CsmLMJMiQzotiflkdBfJ0r1m9XBMCF">
+          <attributeName>Suc</attributeName>
+          <attributeDefinition>Success of the dive (if prey was retrieved and brought to surface/type of dive).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>T</code>
+                    <definition>Travel dive</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>Prey was carried over from previous dive</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>I</code>
+                    <definition>Interacting with another sea otter</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Unknown</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="J5QTv6NN5sUQPNRiSIq1PyiJIupxo1">
+          <attributeName>HT</attributeName>
+          <attributeDefinition>Number of seconds that prey was handled (eating and/or holding).</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>ss</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="2uFGU1DzIh1qdLmytFQEAGnK2pNCaH">
+          <attributeName>PreyItem</attributeName>
+          <attributeDefinition>Three letter code associated with the species or taxon of the prey item (refer to prey_class data set).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="rUBxD7Tdaw1z70tsiuzwSOKRCc9udM">
+          <attributeName>PreyQty</attributeName>
+          <attributeDefinition>Number of prey items received in specified dive that belong to the corresponding prey code.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="xcd7QOwolun8gb6HVxQ1SNn64BbF7T">
+          <attributeName>PreySz</attributeName>
+          <attributeDefinition>Estimated size of the prey item based on sea otter paw width. A is less than 1/3 the paw, B is less than 2/3 the paw, and C is the whole paw.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="pUbQ9rAtsZ3md6Cz24tdu4KE25MfGk">
+          <attributeName>PropNotEat</attributeName>
+          <attributeDefinition>Estimated percentage of uneaten prey displayed as a decimal.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="iVCz8mzif9hOR5zM2KmBZkaO0Q97PL">
+          <attributeName>Why....Notes...Tool.Use</attributeName>
+          <attributeDefinition>Reason that prey was not eaten, any notes on prey and/or dive, and any tools used on prey.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="le1NMzaV1iprBGmQxlVpkZSsnqxP0P">
+          <attributeName>Region</attributeName>
+          <attributeDefinition>Defined area of Prince of Wales Island where observed sea otter was foraging.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="75ztmNhrzThZutxRzkuULbBStOts7c">
+          <attributeName>YEAR</attributeName>
+          <attributeDefinition>Aerial Survey year from USFWS surveys.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="G6zc2RmJrNHnVpTCXVJR6wxyAH97u2">
+          <attributeName>ObsLatDeg</attributeName>
+          <attributeDefinition>Latitude of the observer's position in decimal degrees. Coordinates are N.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="axSU9xGk6dVT6F9MFJxualQxPaZXuU">
+          <attributeName>ObsLongDeg</attributeName>
+          <attributeDefinition>Longitude of the observer's position in decimal degrees (negative). Coordinates are E.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="aBvJQAOecABJ4PMXv3IRKsvpMum4Or">
+          <attributeName>OtterLatDeg</attributeName>
+          <attributeDefinition>Latitude of the sea otter's position in decimal degrees. Coordinates are N.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="puyZV27CJEcRPTKFU9CpTGTsXV6wtz">
+          <attributeName>OtterLongDeg</attributeName>
+          <attributeDefinition>Longitude of the sea otter's position in decimal degrees (negative). Coordinates are E.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="lQzsf8Eqtf99pSGm5s0F7eIq3T9820">
+          <attributeName>age</attributeName>
+          <attributeDefinition>Sea otter age (juvenile or adult).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Adult</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>J</code>
+                    <definition>Juvenile</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Undetermined</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="axMk7ZEE1U6AmlZLJXfJRME7kZCykH">
+          <attributeName>sex</attributeName>
+          <attributeDefinition>Reproductive status of sea otter.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>M</code>
+                    <definition>Male</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>F</code>
+                    <definition>Female</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Undetermined</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="URseheEKKbh9X6HuobZ2oNN72Pl7PF">
+          <attributeName>pup</attributeName>
+          <attributeDefinition>Size of pup if present.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>Small</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>L</code>
+                    <definition>Large</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NA</code>
+                    <definition>No pup present</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="TyFN3yU9QyoJsMxB8oePgBNG2wTtsR">
+          <attributeName>where</attributeName>
+          <attributeDefinition>Location of sea otter in terms of ecosystem type.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>OW</code>
+                    <definition>open water</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KC</code>
+                    <definition>kelp canopy</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>IN</code>
+                    <definition>intertidal</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ER</code>
+                    <definition>emergent rocks</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="8bfkqp3G13fUNHbBEbEyUUlcvMhBGn">
+          <attributeName>obscond</attributeName>
+          <attributeDefinition>Observer's visibility of sea otter (glare, chop, distance, etc.).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>FA</code>
+                    <definition>fair</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GO</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>VG</code>
+                    <definition>very good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>EX</code>
+                    <definition>excellent</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="df9eO1vubwcXSqd0JWzGiu6x48UGXB">
+          <attributeName>Rain</attributeName>
+          <attributeDefinition>Amount of precipitation during observation (none, drizzle, light, rain).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="BO2dgQi9zre0DrKyVWpKyKKv0F7GE6">
+          <attributeName>Sky</attributeName>
+          <attributeDefinition>Cloud cover percentage at time of observation (0%, 25%, 50%, 75%,100%).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>0-24%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>25</code>
+                    <definition>25-49%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>50</code>
+                    <definition>50-74%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>75</code>
+                    <definition>75-99%</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>100</code>
+                    <definition>100%</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="Mb7o2ZL89uhezPBKzRuTsqwA5raWIJ">
+          <attributeName>observer</attributeName>
+          <attributeDefinition>Initials of the person observing the sea otter.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="a4v4EUrard8ExtVJUyQ2lUkmAQUuFg">
+          <attributeName>recorder</attributeName>
+          <attributeDefinition>Initials of the person recording the data.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="O6H5xe7nlBSyqEezzN5HvAL0x13C4m">
+          <attributeName>EnteredBy</attributeName>
+          <attributeDefinition>Initials of the person who entered the raw data into the dataset.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="h0QN9kuzlzdufs0C8SQ6EWqFqwLARE">
+          <attributeName>checked.by</attributeName>
+          <attributeDefinition>Initials of the person who double checked the entered data against the raw data.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="CcUTiCpIfQv4t2BFDBZLtTv5UiMstW">
+          <attributeName>PreyCat</attributeName>
+          <attributeDefinition>Functional sea otter prey group (clam, crab, cucumber, mussel, snail, star, urchin, NA).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="vexxFXV2PtSQ2ak6QQ0tv4sENJrxTG">
+          <attributeName>Occupation</attributeName>
+          <attributeDefinition>Number of years sea otters have occupied this area.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="OgNF7PxTTuDnE17y61f3LCJqX3HDTO">
+          <attributeName>julian</attributeName>
+          <attributeDefinition>Number of days since January 1st that the observation took place (Julian date).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="3J56PXW9nXAnwuFoBkJlw3kKDChR5M">
+          <attributeName>Season</attributeName>
+          <attributeDefinition>Time of year that sea otter was observed.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Spring</code>
+                    <definition>March 21st-June 20th</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Summer</code>
+                    <definition>June 21st-September 20th</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <entityType>text/csv</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

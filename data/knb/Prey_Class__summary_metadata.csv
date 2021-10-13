@@ -1,0 +1,21 @@
+name,value
+File_Name,Prey_Class
+Date_Downloaded,2021-10-13 08:30:37
+Data_ID,urn:uuid:667844b4-b055-4ed3-a3a1-28bcb11dca25
+Data_URL,https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:667844b4-b055-4ed3-a3a1-28bcb11dca25
+Metadata_ID,urn:uuid:bbf026b7-ca66-412e-9243-33532506c4e0
+Metadata_URL,https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:bbf026b7-ca66-412e-9243-33532506c4e0
+Metadata_EML_Version,2.1.1
+Dataset_URL,https://search.dataone.org/#view/urn:uuid:bbf026b7-ca66-412e-9243-33532506c4e0
+Dataset_Title,"Sea otter foraging data, visual observations from Prince of Wales, Alaska"
+Dataset_StartDate,2018-05-01
+Dataset_EndDate,2018-08-20
+Dataset_Location,"Prince of Wales Island, Alaska"
+Dataset_WestBoundingCoordinate,-134.105784
+Dataset_EastBoundingCoordinate,-132.396348
+Dataset_NorthBoundingCoordinate,56.336226
+Dataset_SouthBoundingCoordinate,54.930219
+Dataset_Taxonomy,Enhydra lutris
+Dataset_Abstract,"Sea otter diets were assessed during summertime 2018 (May-August) visual observations from land. Data were collected on western Prince of Wales Island Alaska, at various sites where sea otter densities are high.  These data were collected as a part of an NSF-funded project: Apex Predators, Ecosystems, and Community Sustainability (APECS, http://apecs-ak.org/). Other datasets to support this work are also archived with KNB."
+Dataset_Methods,"Sea otter foraging data were collected from May to August 2018 via visual observations. Data were collected from locations spanning the west coast of POW encompassing soft and rocky habitats where sea otters occur in high densities. Foraging observations were made from shore to assess sea otter diet composition. Questar telescopes (20-50X) were used to follow individual sea otters for one bout, defined as sequential dives by one sea otter for a maximum of 20 dives or until the sea otter was lost by the observer. Twenty dives are used as this is the maximum number of dives required to determine significant relationships between prey type and diving success. Observations were limited to two observers that were trained together to report analogous observations. For each surface interval (i.e., the time between two consecutive foraging dives), the observer recorded the prey item, to species level when possible. Visual observations were separated into Spring (May 6 – June 20) or Summer (June 21 – August 13). Prey biomass for each season was estimated using a Monte Carlo based simulation to factor in unknown prey and potentially biased prey items."
+Dataset_People,Nicole; LaRoche; Sydney; King; Heidi; Pearson; Ginny; Eckert
