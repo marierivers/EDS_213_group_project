@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-sbc.52.10" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="https://pasta.edirepository.org">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=SBC,o=EDI,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=lkui,o=EDI,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/45dede350f1c9add356cd6ffb75ca43e</alternateIdentifier>
+    <shortName>Larval Settlement</shortName>
+    <title>SBC LTER: Settlement of urchins and other invertebrates, ongoing since 1990</title>
+    <creator>
+      <organizationName>Santa Barbara Coastal LTER</organizationName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Steven C</givenName>
+        <surName>Schroeter</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>US</country>
+      </address>
+      <electronicMailAddress>schroete@lifesci.ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0002-4571-9102</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John Douglas</givenName>
+        <surName>Dixon</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>USA</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Thomas</givenName>
+        <surName>Ebert</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Oregon State University</deliveryPoint>
+        <city>Corvallis</city>
+        <administrativeArea>OR</administrativeArea>
+        <postalCode>97331</postalCode>
+        <country>US</country>
+      </address>
+      <electronicMailAddress>ebertt@onid.orst.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John</givenName>
+        <surName>Richards</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>john.richards@lifesci.ucsb.edu</electronicMailAddress>
+    </creator>
+    <pubDate>2021-10-04</pubDate>
+    <language>English</language>
+    <abstract>
+      <section>
+        <para>
+    The dataset comprises weekly to biweekly data on invertebrate
+    settlement on artificial substrates at six sites in Southern
+    California, and one site in Northern California. The study began in
+    early 1990 and is ongoing. The study’s main focus is on urchins
+    (<emphasis>Strongylocentrotus purpuratus</emphasis> and
+    <emphasis>Mesocentrotus franciscanus</emphasis>), but was expanded
+    to include selected bivalves, gastropods and crabs during the period
+    1994-1997.
+  </para>
+        <para>
+    The purpose of the study is to compare and contrast patterns of
+    settlement supply across a large geographical gradient to explore
+    the possible influence of oceanographic features on these patterns.
+    Both of these goals are facilitated by the long duration of the
+    dataset, its large geographical range and the high temporal
+    frequency of collection.
+  </para>
+        <para>
+    See Methods for more information.  
+  </para>
+      </section>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">populations</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">crabs</keyword>
+      <keyword keywordType="theme">gastropods</keyword>
+      <keyword keywordType="theme">larvae</keyword>
+      <keyword keywordType="theme">LTER</keyword>
+      <keyword keywordType="theme">marine</keyword>
+      <keyword keywordType="theme">oceans</keyword>
+      <keyword keywordType="theme">populations</keyword>
+      <keyword keywordType="theme">Santa Barbara Coastal</keyword>
+      <keyword keywordType="theme">surveys</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Community Structure</keyword>
+      <keyword keywordType="theme">Nearshore Ocean</keyword>
+      <keyword keywordType="theme">populations</keyword>
+      <keyword keywordType="theme">Reef</keyword>
+      <keywordThesaurus>SBC-LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Anacapa Island</keyword>
+      <keyword keywordType="place">Ellwood Pier</keyword>
+      <keyword keywordType="place">Gaviota Pier</keyword>
+      <keyword keywordType="place">Mendocino</keyword>
+      <keyword keywordType="place">Ocean Beach</keyword>
+      <keyword keywordType="place">Point Cabrillo</keyword>
+      <keyword keywordType="place">San Diego</keyword>
+      <keyword keywordType="place">Santa Barbara</keyword>
+      <keyword keywordType="place">Scripps</keyword>
+      <keyword keywordType="place">Stearns Wharf</keyword>
+      <keywordThesaurus>Santa Barbara Coastal LTER Places</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Bivalves</keyword>
+      <keyword keywordType="theme">Crabs</keyword>
+      <keyword keywordType="theme">Echinodermata</keyword>
+      <keyword keywordType="theme">Gastropods</keyword>
+      <keyword keywordType="theme">Recruitment</keyword>
+      <keywordThesaurus>NBII Biocomplexity</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">larvae</keyword>
+      <keyword keywordType="theme">larval settlement</keyword>
+      <keyword keywordType="theme">LTER</keyword>
+      <keyword keywordType="theme">time series</keyword>
+      <keyword keywordType="taxonomic">Urchins</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This data package is released under the Creative Commons License
+  Attribution 4.0 International (CC BY 4.0, see
+  https://creativecommons.org/licenses/by/4.0/). This license states
+  that consumers ("Data Users" herein) may distribute, adapt,
+  reuse, remix, and build upon this work, as long as they give
+  appropriate credit, provide a link to the license, and indicate if
+  changes were made. If redistributed, a Data User may not apply
+  additional restrictions or technological measures that prevent access.
+</para>
+      <para>
+  The Data User has an ethical obligation to cite the data source
+  appropriately in any publication or product that results from its use,
+  and notify the data contact or creator. Communication, collaboration,
+  or co-authorship (as appropriate) with the creators of this data
+  package is encouraged to prevent duplicate research or publication.
+  The Data User is urged to contact the authors of these data if any
+  questions about methodology or results occur. The Data User should
+  realize that these data may be actively used by others for ongoing
+  research and that coordination may be necessary to prevent duplication
+  or inappropriate use. The Data User should realize that
+  misinterpretation may occur if data are used outside of the context of
+  the original study. The Data User should be aware that data are
+  updated periodically and it is the responsibility of the Data User to
+  check for new versions of the data.
+</para>
+      <para>
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy of data sets cannot be
+  guaranteed. This data package (with its components) is made available
+  “as is” and with no warranty of accuracy or fitness for use. The
+  creators of this data package and the repository where these data were
+  obtained shall not be liable for any damages resulting from
+  misinterpretation, use or misuse of the data package or its
+  components.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://sbc.lternet.edu/</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Anacapa Island CA: Anacapa Island CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.362097</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.362097</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.01681</northBoundingCoordinate>
+          <southBoundingCoordinate>34.01681</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Ellwood Pier, Goleta CA: Ellwood Pier, Goleta CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.92408</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.92408</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.43085</northBoundingCoordinate>
+          <southBoundingCoordinate>34.43085</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Gaviota Pier, Santa Barbara County CA: Gaviota Pier, Santa Barbara County CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.22821</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.22821</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.46978</northBoundingCoordinate>
+          <southBoundingCoordinate>34.46978</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Stearns Wharf, Santa Barbara CA: Stearns Wharf, Santa Barbara CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.68493</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.68493</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.40934</northBoundingCoordinate>
+          <southBoundingCoordinate>34.40934</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Scripps Peir, San Diego CA: Scripps Peir, San Diego CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-117.25647</westBoundingCoordinate>
+          <eastBoundingCoordinate>-117.25647</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.85039</northBoundingCoordinate>
+          <southBoundingCoordinate>32.85039</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Ocean Beach, San Diego CA: Ocean Beach, San Diego CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-117.25662</westBoundingCoordinate>
+          <eastBoundingCoordinate>-117.25662</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.74914</northBoundingCoordinate>
+          <southBoundingCoordinate>32.74914</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Point Cabrillo, Mendocino County CA: Point Cabrillo, Mendocino County CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-123.82679</westBoundingCoordinate>
+          <eastBoundingCoordinate>-123.82679</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.35037</northBoundingCoordinate>
+          <southBoundingCoordinate>39.35037</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1990-02-19</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-08-09</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <positionName>Information Manager, Santa Barbara Coastal LTER</positionName>
+      <address scope="document">
+        <deliveryPoint>Marine Science Institute</deliveryPoint>
+        <deliveryPoint>University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>United States</country>
+      </address>
+      <phone phonetype="voice">805 893 2071</phone>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+      <onlineUrl>https://sbclter.msi.ucsb.edu/</onlineUrl>
+    </contact>
+    <publisher>
+      <organizationName>Environmental Data Initiative</organizationName>
+      <electronicMailAddress>info@environmentaldatainitiative.org</electronicMailAddress>
+      <onlineUrl>https://environmentaldatainitiative.org</onlineUrl>
+    </publisher>
+    <pubPlace>Environmental Data Initiative</pubPlace>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <para>
+    This study aims to follow population dynamics of Sea Urchin settlers
+    (<emphasis>Strongylocentrotus purpuratus</emphasis> and
+    <emphasis>Mesocentrotus franciscanus</emphasis>) over time and
+    space. Settlement is measured as the number of individuals found on
+    85 cm2 wood-backed brushes per day. Brushes are fastened to ropes
+    and deployed in two week intervals from 1990 to present from the
+    piers at the following six sites: Anacapa Island, Ellwood Pier,
+    Gaviota Pier, Stearns Wharf, Scripps Pier, Ocean Beach Pier and
+    Point Cabrillo (see Temporal, Geographic and spatial coverage page
+    for GPS coordinates). By 1997 taxonomic coverage at all sites was
+    extended to include settlement of molluscs and crabs.
+  </para>
+          </section>
+        </description>
+        <protocol>
+          <title>Sea Urchin Recruitment Brush Methods and General Information</title>
+          <creator>
+            <individualName>
+              <surName>Schroeter</surName>
+            </individualName>
+          </creator>
+          <distribution>
+            <online>
+              <url function="download">https://sbclter.msi.ucsb.edu/external/Reef/Protocols/Invert_settlement_Schroeter/schroeter_2017-12-04_urchin_brush_procedures_complete.pdf</url>
+            </online>
+          </distribution>
+        </protocol>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Santa Barbara Coastal Long Term Ecological Research Project</title>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Robert</givenName>
+          <surName>Miller</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 6174</phone>
+        <electronicMailAddress>miller@msi.ucsb.edu</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Dan</givenName>
+          <surName>Reed</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 8363</phone>
+        <electronicMailAddress>dan.reed@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Adrian</givenName>
+          <surName>Stier</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Department of Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9260</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 5467</phone>
+        <electronicMailAddress>adrian.stier@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Gretchen</givenName>
+          <surName>Hoffman</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Department of Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9620</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 6175</phone>
+        <electronicMailAddress>hofmann@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>David</givenName>
+          <surName>Siegel</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Institute for Computational Earth System Science</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-3060</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 4547</phone>
+        <electronicMailAddress>davey@icess.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Santa Barbara Coastal LTER (SBC LTER) is an interdisciplinary research and education program
+established in April 2000 with the goal of developing a predictive understanding of how environmental
+drivers interact with terrestrial and oceanic processes to alter material flows and influence the ecology of
+coastal ecosystems. SBC LTER's principal study domain is the semi-arid coast and nearshore waters of
+the Santa Barbara Channel in southern California, and its diverse and productive marine forests of giant
+kelp (<emphasis>Macrocystis pyrifera</emphasis>) serve as the focal study ecosystem. Analyses of our long-term data have
+identified many of the environmental drivers and ecological processes underlying the production and
+community dynamics of kelp forests. The research proposed to address this question is integrated in a conceptual framework
+that focuses on the causes and ecological consequences of the dynamics of a relatively short-lived
+foundation species in a setting of long-term climate change and human use.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>NSF Award OCE-9982105, OCE-0620276, OCE-1232779, OCE-1831937</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable>
+      <entityName>California invertebrate settlement, all years</entityName>
+      <entityDescription>settlement data for urchins plus selected bivalves, gastropods and crabs.</entityDescription>
+      <physical>
+        <objectName>Invertebrate_Settlement_All_Years_20211004.csv</objectName>
+        <size unit="byte">4127959</size>
+        <authentication method="MD5">bbb5349e7b55b863ee3107706f39c33c</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/52/10/6f1d97294f041ee3d39cda102e0223af</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>SITE</attributeName>
+          <attributeLabel>Site</attributeLabel>
+          <attributeDefinition>Sampling location, piers along the coast of California.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>ANACAPA</code>
+                    <definition>Anacapa Island</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AVILA</code>
+                    <definition>Avila Beach</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FBPC</code>
+                    <definition>Point Cabrillo</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GAVIOTA</code>
+                    <definition>Gaviota Pier</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>OCNBCH</code>
+                    <definition>Ocean Beach</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SBELL</code>
+                    <definition>Ellwood Pier</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SBSTWRF</code>
+                    <definition>Stearns Wharf</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SIO</code>
+                    <definition>Scripps</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DATE_DEPLOYED</attributeName>
+          <attributeLabel>Date Deployed</attributeLabel>
+          <attributeDefinition>Date brushes were deployed at the pier</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>mm/dd/yyyy</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DATE_RETRIEVED</attributeName>
+          <attributeLabel>Date Retrieved</attributeLabel>
+          <attributeDefinition>Date brushes were retrieved from the pier</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>mm/dd/yyyy</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DURATION</attributeName>
+          <attributeLabel>Duration</attributeLabel>
+          <attributeDefinition>Deployment duration in days (date_retrieved - date_deployed)</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>day</customUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LINE</attributeName>
+          <attributeLabel>Line Code</attributeLabel>
+          <attributeDefinition>Replicate number of deployment line</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Line 1</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>Line 2</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>POSITION</attributeName>
+          <attributeLabel>Position</attributeLabel>
+          <attributeDefinition>Vertical position of a set of two to four replicate brushes</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>BRUSH</attributeName>
+          <attributeLabel>Brush number</attributeLabel>
+          <attributeDefinition>Replicate number of sampling brush (numbered 1-6)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SAMPLEID</attributeName>
+          <attributeLabel>Sample ID</attributeLabel>
+          <attributeDefinition>Sample ID</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>ARTHROPODA</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of Arthropods</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>BIVALVIA</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of Bivalves</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>GASTROPODA</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of Gastropods</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>OPHIUROIDEA_ASTERPODEA</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of ophiuroidea and asterpodea</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>S_PURPURATUS</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of S. purparatus</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>M_FRANCISCANUS</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of M. franciscanus</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TOTAL_URCHINS</attributeName>
+          <attributeLabel>Brush Density (settlement rate) of total Urchins</attributeLabel>
+          <attributeDefinition>Average number of settlers per day per brush (85cm2) each day during the deployment period, based on 4-20 replicate brushes.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>numberPer85CentimeterSquaredPerDay</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>No data</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>60400</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="day" abbreviation="day" multiplierToSI="86400" name="day" parentSI="second" unitType="time">
+          <description>day (86400 seconds)</description>
+        </unit>
+        <unit id="numberPer85CentimeterSquaredPerDay" name="numberPer85CentimeterSquaredPerDay" unitType="arealDensityRate">
+          <description>number of organisms (things) per area of 85 cm squared per day</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
