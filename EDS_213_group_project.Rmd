@@ -77,6 +77,12 @@ ggplot(data = otter_LTER, aes(x = DATE, y = COUNT)) +
 
 
 
+```{r}
+urchin_maybe <- read_csv("https://cn.dataone.org/cn/v2/resolve/doi%3A10.6085%2FAA%2Fmarine_cbs.7.1")
+
+urchin_maybe
+
+```
 
 
 
