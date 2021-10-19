@@ -13,30 +13,18 @@ library(here)
 library(httr)
 library(dataRetrieval)
 library(metajam)
+library(lubridate)
 ```
 
 ## Assignment 2.3 - Use an API to retrieve data
 
 - We need to document metadata? 
 
-```{r}
+```{r }
 # Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
 data_lter_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
 metajam::download_d1_data(data_lter_url, "data", "counts_sb")
-```
-
-```{r}
-# Nicole LaRoche, Sydney King, and Heidi Pearson. 2020. Sea otter foraging data, visual observations from Prince of Wales, Alaska. Knowledge Network for Biocomplexity.
-data_knb_alaska2020_url <- "https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ad06722b5-492c-4677-9c81-94a96a5aaca6"
-metajam::download_d1_data(data_knb_alaska2020_url, "data", "foraging_alaska")
-```
-
-```{r}
-# knb Tiffany Stephens and Ginny Eckert. 2019. Boat-based counts of sea otters at specific sites in Southeast Alaska
-data_knb_alaska2019_url <- "https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ad97089d4-b532-493b-b253-7f3f4adf939d"
-
-metajam::download_d1_data(data_knb_alaska2019_url, "data", "counts_alaska")
 ```
 
 ```{r}
@@ -45,49 +33,36 @@ metajam::download_d1_data(data_knb_alaska2019_url, "data", "counts_alaska")
 data_urchins_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af"
 
 metajam::download_d1_data(data_urchins_url, "data", "urchins")
-
-
 ```
 
 
-
 ```{r}
-# links for USGS data were not valid
-# data_usgs_url <- "https://cn.dataone.org/cn/v2/resolve/79aabecc-6263-4837-b68b-cdf5b644fe46"
-
-# metajam::download_d1_data(data_usgs_url, "data")
-```
-
-```{r}
-library(readr)
-sea_otter_counts <- read_csv("data/urn_uuid_b910f74b-171b-4d2b-b065-fb21823a8e84__sea_otter_counts_2017_2018_CLEANDATA__csv/sea_otter_counts_2017_2018_CLEANDATA.csv")
-#View(sea_otter_counts)
-
-ggplot(data = sea_otter_counts, aes(x = date_DDMMYY, y = n_otter)) +
-  geom_point()
-
-```
-
-```{r}
-otter_LTER <- read_csv("data/https_pasta.lternet.edu_package_metadata_eml_knb-lter-sbc_61_8__Sea_Otter_Abundance_20210803__csv/Sea_Otter_Abundance_20210803.csv")
+otter_LTER <- read_csv("data/counts_sb/Sea_Otter_Abundance_20210803.csv") %>%
+  filter(YEAR <= 2011) %>%
+  mutate(SITE = SBC_SITE) %>%
+  mutate(SPECIES = "sea otter") %>%
+  select(DATE, SITE, SPECIES, COUNT)
 
 ggplot(data = otter_LTER, aes(x = DATE, y = COUNT)) +
   geom_point()
 ```
 
 
-
 ```{r}
-urchin_maybe <- read_csv("https://cn.dataone.org/cn/v2/resolve/doi%3A10.6085%2FAA%2Fmarine_cbs.7.1")
-
-urchin_maybe
-
-#This si not urchin data
+urchins <- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af", na = "-99999") %>%
+  mutate(DATE = lubridate::mdy(DATE_RETRIEVED)) %>%
+  filter(DATE >= "2007-01-01") %>%
+  mutate(SPECIES = "urchin") %>%
+  mutate(COUNT = TOTAL_URCHINS) %>%
+  select(DATE, SITE, SPECIES, COUNT)
+ 
+urchins
+ggplot(data = urchins, aes(x = DATE, y = COUNT)) +
+  geom_point()
 ```
 
-
-
-
-
+```{r}
+combined_data <- rbind(otter_LTER, urchins)
+```
 
 

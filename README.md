@@ -25,5 +25,5 @@ Are there any legal constraints associated with acquiring, using and sharing pro
 
 There are no legal constraints associated with acquiring, using and sharing project data. 					
 					
-					
+Our data log is located here: https://docs.google.com/spreadsheets/d/1E1X1hMrVCVCBCzP8_eBNz5QEc9xEMgIsqt7brjhbegc/edit?usp=sharing					
 					
