@@ -13,49 +13,61 @@ library(here)
 library(httr)
 library(dataRetrieval)
 library(metajam)
-library(lubridate)
-library(writexl)
-library(utils)
+library(lubridate) #to change date types
+library(utils) #to save our df as a csv
 ```
 
-## Assignment 2.3 - Use an API to retrieve data
 
-- We need to document metadata? 
+### Pulling Down Data with Metajam
+  Each data set is loaded into the `data` folder and then a corresponding folder specifically for that dataset 
 
+#### Otter Data  
 ```{r }
 # Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
 # data url for sea otter data
 data_lter_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
 metajam::download_d1_data(data_lter_url, "data", "counts_sb")
+
+otter_folder <- file.path("data", "counts_sb")
 ```
 
+#### Urchin Data
 ```{r}
 #Santa Barbara Coastal LTER, Steven C Schroeter, John Douglas Dixon, Thomas Ebert, and John Richards. 2021. SBC LTER: Settlement of urchins and other invertebrates, ongoing since 1990. LTER Network Member
 # data url for urchin data
 data_urchins_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af"
 
 metajam::download_d1_data(data_urchins_url, "data", "urchins")
+
+urchin_folder <- system.file("data", "counts_sb")
 ```
 
 
+### Visualizing and Cleaning the Data
+  
+#### Otter Data
 ```{r}
 # read in and visualize otter data
 # clean data to only include interested years (2007-2011) and attributes (year, site, species, and counts)
-otter_LTER <- read_csv("data/counts_sb/Sea_Otter_Abundance_20210803.csv") %>%
+otter_LTER <- read_d1_files(otter_folder, fnc = "read_csv")
+otter_LTER_data <- otter_LTER$data
+
+
+otter_LTER_data <- otter_LTER_data %>%
   filter(YEAR <= 2011) %>%
   mutate(SITE = SBC_SITE) %>%
   mutate(SPECIES = "sea otter") %>%
   select(DATE, SITE, SPECIES, COUNT)
 
-ggplot(data = otter_LTER, aes(x = DATE, y = COUNT)) +
+ggplot(data = otter_LTER_data, aes(x = DATE, y = COUNT)) +
   geom_point()
 ```
 
-
+#### Urchin Data
 ```{r}
 # read in and visualize urchin data
-# clean data to formate dates as YYYY-MM-DD, only include interested years (2007-2011) and attributes (year, site, species, and counts)
+# clean data to format dates as YYYY-MM-DD, only include interested years (2007-2011) and attributes (year, site, species, and counts)
 urchins <- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af", na = "-99999") %>%
   mutate(DATE = lubridate::mdy(DATE_RETRIEVED)) %>%
   filter(DATE >= "2007-01-01") %>%
@@ -68,10 +80,15 @@ ggplot(data = urchins, aes(x = DATE, y = COUNT)) +
   geom_point()
 ```
 
+
+### Combining Data Sets into one Data Frame 
+
 ```{r}
 # combine the cleaned otter abnd urchin datasets
 combined_data <- rbind(otter_LTER, urchins)
 ```
+
+### Saving the df as a .csv file 
 
 ```{r}
 # write newly created dataset to a .csv file
