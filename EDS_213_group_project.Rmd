@@ -22,26 +22,34 @@ library(utils) #to save our df as a csv
 - Each data set is loaded into the `data` folder and then a corresponding folder specifically for that data set 
 
 #### Otter Data  
-```{r }
+```{r, eval = FALSE}
 # Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
 # data url for sea otter data
+
 data_lter_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
 metajam::download_d1_data(data_lter_url, "data", "counts_sb")
-
+```
+```{r}
 otter_folder <- file.path("data", "counts_sb")
 ```
 
+
+
 #### Urchin Data
-```{r}
+```{r, eval=FALSE}
 #Santa Barbara Coastal LTER, Steven C Schroeter, John Douglas Dixon, Thomas Ebert, and John Richards. 2021. SBC LTER: Settlement of urchins and other invertebrates, ongoing since 1990. LTER Network Member
 # data url for urchin data
+
 data_urchins_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af"
 
 metajam::download_d1_data(data_urchins_url, "data", "urchins")
+```
 
+```{r}
 urchin_folder <- system.file("data", "counts_sb")
 ```
+
 
 
 ### Visualizing and Cleaning the Data
