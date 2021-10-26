@@ -19,29 +19,37 @@ library(utils) #to save our df as a csv
 
 
 ### Pulling Down Data with Metajam
-  Each data set is loaded into the `data` folder and then a corresponding folder specifically for that dataset 
+- Each data set is loaded into the `data` folder and then a corresponding folder specifically for that data set 
 
 #### Otter Data  
-```{r }
+```{r, eval = FALSE}
 # Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
 # data url for sea otter data
+
 data_lter_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
 metajam::download_d1_data(data_lter_url, "data", "counts_sb")
-
+```
+```{r}
 otter_folder <- file.path("data", "counts_sb")
 ```
 
+
+
 #### Urchin Data
-```{r}
+```{r, eval=FALSE}
 #Santa Barbara Coastal LTER, Steven C Schroeter, John Douglas Dixon, Thomas Ebert, and John Richards. 2021. SBC LTER: Settlement of urchins and other invertebrates, ongoing since 1990. LTER Network Member
 # data url for urchin data
+
 data_urchins_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af"
 
 metajam::download_d1_data(data_urchins_url, "data", "urchins")
+```
 
+```{r}
 urchin_folder <- system.file("data", "counts_sb")
 ```
+
 
 
 ### Visualizing and Cleaning the Data
@@ -56,12 +64,18 @@ otter_LTER_data <- otter_LTER$data
 
 otter_LTER_data <- otter_LTER_data %>%
   filter(YEAR <= 2011) %>%
+  filter(COUNT > 0) %>% 
   mutate(SITE = SBC_SITE) %>%
   mutate(SPECIES = "sea otter") %>%
   select(DATE, SITE, SPECIES, COUNT)
 
 ggplot(data = otter_LTER_data, aes(x = DATE, y = COUNT)) +
-  geom_point()
+  geom_point() +
+  labs(title = "Otter Counts in the Santa Barbara Channel", 
+       x = "Date", 
+       y = "Number of Otters seen")
+
+ggsave(here("figs", "otter_counts.png"))
 ```
 
 #### Urchin Data
@@ -71,27 +85,56 @@ ggplot(data = otter_LTER_data, aes(x = DATE, y = COUNT)) +
 urchins <- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af", na = "-99999") %>%
   mutate(DATE = lubridate::mdy(DATE_RETRIEVED)) %>%
   filter(DATE >= "2007-01-01") %>%
+  filter(TOTAL_URCHINS > 0) %>% 
   mutate(SPECIES = "urchin") %>%
   mutate(COUNT = TOTAL_URCHINS) %>%
   select(DATE, SITE, SPECIES, COUNT)
  
 urchins
 ggplot(data = urchins, aes(x = DATE, y = COUNT)) +
-  geom_point()
+  geom_point() +
+   labs(title = "Urchin Counts in the Santa Barbara Channel", 
+       x = "Date", 
+       y = "Number of Urchin seen")
+
+ggsave(here("figs", "urchin_counts.png"))
 ```
 
 
 ### Combining Data Sets into one Data Frame 
 
 ```{r}
-# combine the cleaned otter abnd urchin datasets
-combined_data <- rbind(otter_LTER, urchins)
+# combine the cleaned otter and urchin data sets
+combined_data <- rbind(urchins, otter_LTER_data)
+
+ggplot(data = combined_data, aes(x = DATE, y = COUNT, color = SPECIES)) +
+  geom_point() +
+   labs(title = "Urchin and Otter Counts in the Santa Barbara Channel", 
+       x = "Date", 
+       y = "Species Count", 
+       color = "Species")
+
+ggsave(here("figs", "both_counts.png"))
 ```
 
 ### Saving the df as a .csv file 
 
 ```{r}
-# write newly created dataset to a .csv file
+# write newly created data set to a .csv file, so that we can add this to our github 
 write.csv(combined_data,"clean_data\\sb_otter_urchin_counts.csv", row.names = TRUE)
 ```
+
+### Final Thoughts
+
+- We did not have time to do a more in depth analysis, as the time was short and we spent a long time looking for data. If we had been able to access the USGS data set, we think that this could have been a much more comprehensive review of the two species populations. 
+- Further, if we had been able to use the USGS data we would have expanded our sites in include more of the West Coast, not just the Santa Barbara Channel. We found a few data sets that ranged from Canada down to Mexico, however with the short time span we did not request access from USGS. 
+
+
+
+
+
+
+
+
+
 
