@@ -35,7 +35,7 @@ There are no legal constraints associated with acquiring, using and sharing proj
 					
 Here is our [data log:](https://docs.google.com/spreadsheets/d/1E1X1hMrVCVCBCzP8_eBNz5QEc9xEMgIsqt7brjhbegc/edit?usp=sharing)	
 .center[
-```{r echo = FALSE, out.width= '90%'}
+```{r echo = FALSE, out.width= '95%'}
 knitr::include_graphics("./pres_figs/datalog.png")
 ```
 ]
@@ -74,7 +74,7 @@ metajam::download_d1_data(data_urchins_url, "data", "urchins")
 # Merging Data
 ```{r comment='#', eval=FALSE}
 otter_LTER_data <- otter_LTER_data %>%
-  filter(YEAR <= 2011) %>%
+  filter(YEAR <= 2020) %>%
   mutate(SITE = SBC_SITE) %>%
   mutate(SPECIES = "sea otter") %>%
   select(DATE, SITE, SPECIES, COUNT)
@@ -88,7 +88,11 @@ urchins <- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lt
   mutate(COUNT = TOTAL_URCHINS) %>%
   select(DATE, SITE, SPECIES, COUNT)
 ```
-
+.center[
+```{r echo = FALSE, out.width= '50%'}
+knitr::include_graphics("./pres_figs/combined_data.png")
+```
+]
 ---
 
 # Results
@@ -115,4 +119,11 @@ knitr::include_graphics("./pres_figs/knb_ScreenShot.png")
 # Future Steps
 
 - contact USGS for additional otter population data
+- evaluate species counts before and after MPA was established
+- evaluate species counts inside and outside of MPA
 
+.center[
+```{r echo = FALSE, out.width= '60%'}
+knitr::include_graphics("./pres_figs/MPA-map-channelkeeper.jpg")
+```
+]

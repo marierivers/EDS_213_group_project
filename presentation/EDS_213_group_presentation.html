@@ -51,15 +51,15 @@ There are no legal constraints associated with acquiring, using and sharing proj
 					
 Here is our [data log:](https://docs.google.com/spreadsheets/d/1E1X1hMrVCVCBCzP8_eBNz5QEc9xEMgIsqt7brjhbegc/edit?usp=sharing)	
 .center[
-&lt;img src="./pres_figs/datalog.png" width="90%" /&gt;
+&lt;img src="./pres_figs/datalog.png" width="95%" /&gt;
 ]
 ---
 
 # API and Data Retrieval
 Datasets are from DataOne and the Santa Barbara Coastal Long Term Monitoring Ecological Research (LTER) project
 
-<div id="htmlwidget-33a88e042e869cdd3f5f" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-33a88e042e869cdd3f5f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[34,-120],8,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-af7f3a6dfd033e04ffca" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-af7f3a6dfd033e04ffca">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[34,-120],8,[]]},"evals":[],"jsHooks":[]}</script>
 ---
 
 # API and Data Retrieval
@@ -89,7 +89,7 @@ metajam::download_d1_data(data_urchins_url, "data", "urchins")
 
 ```r
 otter_LTER_data &lt;- otter_LTER_data %&gt;%
-  filter(YEAR &lt;= 2011) %&gt;%
+  filter(YEAR &lt;= 2020) %&gt;%
   mutate(SITE = SBC_SITE) %&gt;%
   mutate(SPECIES = "sea otter") %&gt;%
   select(DATE, SITE, SPECIES, COUNT)
@@ -104,7 +104,9 @@ urchins &lt;- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta
   mutate(COUNT = TOTAL_URCHINS) %&gt;%
   select(DATE, SITE, SPECIES, COUNT)
 ```
-
+.center[
+&lt;img src="./pres_figs/combined_data.png" width="50%" /&gt;
+]
 ---
 
 # Results
@@ -127,7 +129,12 @@ urchins &lt;- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta
 # Future Steps
 
 - contact USGS for additional otter population data
+- evaluate species counts before and after MPA was established
+- evaluate species counts inside and outside of MPA
 
+.center[
+&lt;img src="./pres_figs/MPA-map-channelkeeper.jpg" width="60%" /&gt;
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -84,7 +84,7 @@ otter_LTER_data <- otter_LTER$data
 
 
 otter_LTER_data <- otter_LTER_data %>%
-  filter(YEAR <= 2011) %>%
+  filter(YEAR <= 2020) %>%
   filter(COUNT > 0) %>% 
   mutate(SITE = SBC_SITE) %>%
   mutate(SPECIES = "sea otter") %>%
