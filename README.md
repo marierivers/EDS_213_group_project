@@ -23,7 +23,7 @@ Around 50% of the total project time should be used to manage the data, this inc
 					
 How long should the data be preserved and where is the best location to do so?
 
-The data will be preserved on knb, as it is a more robust site that hosts a greater number of repositories when compared to some of the other data repository sites. The relevant data will be saved as both a csv and txt file. The csv for now is very accessible and can be quickly downloaded and used for analysis, however the txt file will most likely be able to withstand time for a longer period. It is a very accessible file as it can be opened by almost any program. 
+The data will be preserved on knb, as it pairs with DataOne, a more robust site that hosts a greater number of repositories when compared to some of the other data repository sites. And importantly knb focuses on FAIR principles, which allow for better open science and collaboration. The relevant data will be saved as both a csv and txt file. The csv for now is very accessible and can be quickly downloaded and used for analysis, however the txt file will most likely be able to withstand time for a longer period. It is a very accessible file as it can be opened by almost any program. 
 
 Are there any legal constraints associated with acquiring, using and sharing project data?
 
