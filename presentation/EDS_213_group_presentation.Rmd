@@ -27,21 +27,24 @@ How MPA's affect sea otter populations
 # Data Management Plan
 
 Time: ~50% of the total project time for managing  data 
- - making sure  data is clean and accessible
- - uploading relevant files to a repository
- - making sure all individual data sets can be used together
- 
-Team: all team members responsible for these tasks
+ - making sure  data is clean and accessible **Marie**
+ - uploading relevant files to a repository **Halina**
+ - making sure all individual data sets can be used together **Allie**
 
 There are no legal constraints associated with acquiring, using and sharing project data. 					
 					
-Here is our [data log:](https://docs.google.com/spreadsheets/d/1E1X1hMrVCVCBCzP8_eBNz5QEc9xEMgIsqt7brjhbegc/edit?usp=sharing)		
+Here is our [data log:](https://docs.google.com/spreadsheets/d/1E1X1hMrVCVCBCzP8_eBNz5QEc9xEMgIsqt7brjhbegc/edit?usp=sharing)	
+.center[
+```{r echo = FALSE, out.width= '90%'}
+knitr::include_graphics("./pres_figs/datalog.png")
+```
+]
 ---
 
 # API and Data Retrieval
 Datasets are from DataOne and the Santa Barbara Coastal Long Term Monitoring Ecological Research (LTER) project
 
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+```{r out.width='100%', fig.height=6, eval=require('leaflet'), echo=FALSE}
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(-120, 34, zoom = 8)
 ```
