@@ -19,11 +19,11 @@ The datasets will be individually filtered and mutated so that the two datasets 
 
 How much time is needed to manage the data and who will be responsible for doing so?
 
-Around 25% of the total project time should be used to manage the data, this includes making sure that data is clean and accessible, uploading relevant files to a repository, and making sure that all the individual data sets can be used together. The team (Marie, Allie, and Halina) will be responsible for making sure this is done correctly and in a way that can be reproduced. 					
+Around 50% of the total project time should be used to manage the data, this includes making sure that data is clean and accessible, uploading relevant files to a repository, and making sure that all the individual data sets can be used together. The team (Marie, Allie, and Halina) will be responsible for making sure this is done correctly and in a way that can be reproduced. 					
 					
 How long should the data be preserved and where is the best location to do so?
 
-The data will be preserved on DataONE, as it is a more robust site that hosts a greater number of repositories when compared to some of the other data repository sites like knb. The relevant data will be saved as both a csv and txt file. The csv for now is very accessible and can be quickly downloaded and used for analysis, however the txt file will most likely be able to withstand time for a longer period. It is a very accessible file as it can be opened by almost any program. 
+The data will be preserved on knb, as it is a more robust site that hosts a greater number of repositories when compared to some of the other data repository sites. The relevant data will be saved as both a csv and txt file. The csv for now is very accessible and can be quickly downloaded and used for analysis, however the txt file will most likely be able to withstand time for a longer period. It is a very accessible file as it can be opened by almost any program. 
 
 Are there any legal constraints associated with acquiring, using and sharing project data?
 
