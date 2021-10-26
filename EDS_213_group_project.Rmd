@@ -1,8 +1,13 @@
 ---
 title: "EDS 213 Group Project"
 author: "Halina Do-Linh, Marie Rivers, Allie Cole"
-date: "10/8/2021"
-output: html_document
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: flatly
+    code_folding: show
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
@@ -17,30 +22,45 @@ library(lubridate) #to change date types
 library(utils) #to save our df as a csv
 ```
 
+```{css style settings, echo = FALSE}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #eee;
+}
+
+# created to adjust font size of quote block
+```
+
 
 ### Pulling Down Data with Metajam
-- Each data set is loaded into the `data` folder and then a corresponding folder specifically for that data set 
 
-#### Otter Data  
+-   Each data set is loaded into the `data` folder and then a corresponding folder specifically for that data set
+
+#### Otter Data
+
+Otter data was obtained from DataONE Data Catalog. See citation:
+
+> Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
+
 ```{r, eval = FALSE}
-# Santa Barbara Coastal LTER, Daniel C Reed, Shannon Harrer, Clint J Nelson, and Robert J Miller. 2021. SBC LTER: Reef: Sightings of sea otters (Enhydra lutris) near Santa Barbara and Channel Islands, ongoing since 2007.
-# data url for sea otter data
-
 data_lter_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F61%2F8%2F85e13b27599bf1ed68c7930674e1e7bd"
 
 metajam::download_d1_data(data_lter_url, "data", "counts_sb")
 ```
+
 ```{r}
 otter_folder <- file.path("data", "counts_sb")
 ```
 
-
-
 #### Urchin Data
-```{r, eval=FALSE}
-#Santa Barbara Coastal LTER, Steven C Schroeter, John Douglas Dixon, Thomas Ebert, and John Richards. 2021. SBC LTER: Settlement of urchins and other invertebrates, ongoing since 1990. LTER Network Member
-# data url for urchin data
 
+Urchin data data was obtained from DataONE Data Catalog. See citation:
+
+> Santa Barbara Coastal LTER, Steven C Schroeter, John Douglas Dixon, Thomas Ebert, and John Richards. 2021. SBC LTER: Settlement of urchins and other invertebrates, ongoing since 1990. LTER Network Member
+
+```{r, eval=FALSE}
 data_urchins_url <- "https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af"
 
 metajam::download_d1_data(data_urchins_url, "data", "urchins")
@@ -50,14 +70,15 @@ metajam::download_d1_data(data_urchins_url, "data", "urchins")
 urchin_folder <- system.file("data", "counts_sb")
 ```
 
-
-
 ### Visualizing and Cleaning the Data
-  
+
+We created individual `tidy` datasets of the sea otter and urchin data. The datasets includes our years of interest from 2007 to 2011, and the attributes year, site, species, and counts.
+
+We then created a visualization of each species to display the total counts.
+
 #### Otter Data
-```{r}
-# read in and visualize otter data
-# clean data to only include interested years (2007-2011) and attributes (year, site, species, and counts)
+
+```{r, message = FALSE}
 otter_LTER <- read_d1_files(otter_folder, fnc = "read_csv")
 otter_LTER_data <- otter_LTER$data
 
@@ -74,14 +95,15 @@ ggplot(data = otter_LTER_data, aes(x = DATE, y = COUNT)) +
   labs(title = "Otter Counts in the Santa Barbara Channel", 
        x = "Date", 
        y = "Number of Otters seen")
+```
 
-ggsave(here("figs", "otter_counts.png"))
+```{r, include = FALSE, results = 'hide', message = FALSE}
+suppressMessages(ggsave(here("figs", "otter_counts.png")))
 ```
 
 #### Urchin Data
-```{r}
-# read in and visualize urchin data
-# clean data to format dates as YYYY-MM-DD, only include interested years (2007-2011) and attributes (year, site, species, and counts)
+
+```{r, warning = FALSE, message = FALSE}
 urchins <- read_csv("https://cn.dataone.org/cn/v2/resolve/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fdata%2Feml%2Fknb-lter-sbc%2F52%2F10%2F6f1d97294f041ee3d39cda102e0223af", na = "-99999") %>%
   mutate(DATE = lubridate::mdy(DATE_RETRIEVED)) %>%
   filter(DATE >= "2007-01-01") %>%
@@ -96,15 +118,17 @@ ggplot(data = urchins, aes(x = DATE, y = COUNT)) +
    labs(title = "Urchin Counts in the Santa Barbara Channel", 
        x = "Date", 
        y = "Number of Urchin seen")
-
-ggsave(here("figs", "urchin_counts.png"))
 ```
 
+```{r, include = FALSE, results = 'hide', message = FALSE}
+suppressMessages(ggsave(here("figs", "urchin_counts.png")))
+```
 
-### Combining Data Sets into one Data Frame 
+### Combining Data Sets into one Data Frame
 
-```{r}
-# combine the cleaned otter and urchin data sets
+We then combined the 2 datasets using `rbind` and visualized counts of both species on one plot.
+
+```{r, message = FALSE}
 combined_data <- rbind(urchins, otter_LTER_data)
 
 ggplot(data = combined_data, aes(x = DATE, y = COUNT, color = SPECIES)) +
@@ -113,28 +137,21 @@ ggplot(data = combined_data, aes(x = DATE, y = COUNT, color = SPECIES)) +
        x = "Date", 
        y = "Species Count", 
        color = "Species")
-
-ggsave(here("figs", "both_counts.png"))
 ```
 
-### Saving the df as a .csv file 
+```{r, include = FALSE, results = 'hide', message = FALSE}
+suppressMessages(ggsave(here("figs", "both_counts.png")))
+```
+
+### Saving the df as a .csv file
+
+To make our new combined dataset reproducible and accessible, we created a `csv` file to be added to our GitHub and our KNB repository.
 
 ```{r}
-# write newly created data set to a .csv file, so that we can add this to our github 
 write.csv(combined_data,"clean_data\\sb_otter_urchin_counts.csv", row.names = TRUE)
 ```
 
 ### Final Thoughts
 
-- We did not have time to do a more in depth analysis, as the time was short and we spent a long time looking for data. If we had been able to access the USGS data set, we think that this could have been a much more comprehensive review of the two species populations. 
-- Further, if we had been able to use the USGS data we would have expanded our sites in include more of the West Coast, not just the Santa Barbara Channel. We found a few data sets that ranged from Canada down to Mexico, however with the short time span we did not request access from USGS. 
-
-
-
-
-
-
-
-
-
-
+-   We did not have time to do a more in depth analysis, as the time was short and we spent a long time looking for data. If we had been able to access the USGS data set, we think that this could have been a much more comprehensive review of the two species populations.
+-   Further, if we had been able to use the USGS data we would have expanded our sites in include more of the West Coast, not just the Santa Barbara Channel. We found a few data sets that ranged from Canada down to Mexico, however with the short time span we did not request access from USGS.
