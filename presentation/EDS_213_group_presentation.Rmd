@@ -103,14 +103,17 @@ knitr::include_graphics("./pres_figs/both_counts.png")
 ]
 ---
 # Preserved Data
-**Where?** The data will be preserved on [knb](https://dev.nceas.ucsb.edu/view/urn%3Auuid%3A89a211be-22dd-418b-a24b-9be29dc96f09)
+**Where?** The data will be preserved on [knb](https://dev.nceas.ucsb.edu/view/urn%3Auuid%3A89a211be-22dd-418b-a24b-9be29dc96f09) and [GitHub](https://github.com/marierivers/EDS_213_group_project/blob/main/README.md)
 
-.center[
-```{r echo = FALSE, out.width= '60%'}
-knitr::include_graphics("./pres_figs/knb_ScreenShot.png")
-```
+.pull-left[
+<img src="./pres_figs/knb_ScreenShot.png">
 ]
-**Why?** knb is a more robust site that hosts a greater number of repositories when compared to other data repository sites
+
+.pull-right[
+<img src="./pres_figs/gitrepo.png">
+]
+
+**Why?** knb and GitHub are robust sites that hosts a large number of repositories
 
 **How?** relevant data will be saved as both a **csv** and **txt file** 
 - the csv (for now) is very accessible and can be quickly downloaded and used for analysis
